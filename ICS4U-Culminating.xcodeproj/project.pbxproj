@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		99945A67283E6B9200C1B621 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99945A66283E6B9200C1B621 /* main.swift */; };
+		99945A71283E6ED300C1B621 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99945A70283E6ED300C1B621 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		99945A63283E6B9200C1B621 /* ICS4U-Culminating */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ICS4U-Culminating"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99945A66283E6B9200C1B621 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		99945A6F283E6DC700C1B621 /* input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		99945A70283E6ED300C1B621 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,27 @@
 		99945A65283E6B9200C1B621 /* ICS4U-Culminating */ = {
 			isa = PBXGroup;
 			children = (
+				99945A6E283E6D9700C1B621 /* Model */,
+				99945A6D283E6D8C00C1B621 /* Graph */,
 				99945A66283E6B9200C1B621 /* main.swift */,
 			);
 			path = "ICS4U-Culminating";
+			sourceTree = "<group>";
+		};
+		99945A6D283E6D8C00C1B621 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				99945A6F283E6DC700C1B621 /* input.txt */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		99945A6E283E6D9700C1B621 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99945A70283E6ED300C1B621 /* Node.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99945A67283E6B9200C1B621 /* main.swift in Sources */,
+				99945A71283E6ED300C1B621 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
