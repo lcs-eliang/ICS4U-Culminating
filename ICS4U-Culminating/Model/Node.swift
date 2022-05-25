@@ -13,3 +13,15 @@ struct Node: Identifiable {
     let image: String?         // Name of image from assets folder, if one exists
     let edges: [Int]           // A list of id's of nodes this node is connected to
 }
+
+let nodes = [
+    
+    Node(id: 1,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: <#T##[Int]#>)
+
+
+]
