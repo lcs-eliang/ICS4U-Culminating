@@ -21,7 +21,111 @@ let nodes = [
          
          ],
          image: <#T##String?#>,
+         edges: [2])
+    
+    Node(id: 2,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: [3])
+    
+    Node(id: 3,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: [5])
+    
+    Node(id: 5,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: [6])
+
+    Node(id: 6,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: [7,38])
+    
+    Node(id: 7,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: [8])
+    
+    Node(id: 8,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: [9])
+    
+    Node(id: 9,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: [11,38])
+    
+    Node(id: 11,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: [12])
+    
+    Node(id: 12,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: [34,40])
+    
+    Node(id: 1,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
          edges: <#T##[Int]#>)
-
-
+    
+    Node(id: 1,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: <#T##[Int]#>)
+    
+    Node(id: 1,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: <#T##[Int]#>)
+    
+    Node(id: 1,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: <#T##[Int]#>)
+    
+    Node(id: 1,
+         paragraphs: [
+         
+         ],
+         image: <#T##String?#>,
+         edges: <#T##[Int]#>)
+    
+    Node(id: 1,
+         paragraphs: [
+         
+         ],
+         image: ,
+         edges: <#T##[Int]#>)
 ]
+
