@@ -178,147 +178,121 @@ let nodes = [
          edges: [132,38]),
     
     Node(id: 31,
-         paragraphs: [
-         
+         paragraphs: ["Both Dr. Lopez and Zama tell you of the clear water and the white beaches, and your mind is made up. Perhaps Tom followed the same escape route you did, and he is waiting for you on the beach. Either way, you've got to get away from the priests with blood in their hair. For ten days you struggle through the jungle with Zama. Thorns and dry branches tear your clothes and skin. Poisonous snakes are a constant danger, the sounds of their rattles the only warning of their deadly presence. But snakes are nothing compared to the occasional glimpses of jaguars! Finally, the jungle brush thins and the path you are on enters sparse grasslands. The smell of the ocean fills the air.", "You stand on the shore, feet in the water, letting the sand run through your toes. At a small fishing village, you board a boat headed for Cozumel.", "A sudden squall hits. Great waves smash against the small boat. It fills with water and begins to sink. Salt water fills your mouth, and a strange thing happens. The salt water washes away the effects of the magic potion.", "You find yourself in the present again. You have forgotten all about your visit to Dr. Lopez and your trip to the past. You do remember that finding Tom is your mission."
          ],
          image: <#T##String?#>,
          edges: [38]),
     
     Node(id: 32,
-         paragraphs: [
-         
+         paragraphs: ["You head for the coast on foot and arrive on the island of Cozumel after four days of travel by boat. Cozumel is a paradise. Coral reefs are filled with fish. Giant sea turtles swim near the northern end of the island, and birds fill the air at sunrise and sunset. It is hard to tell where the sea ends and the sky begins.", "The island is the home of Mayan traders who travel up and down the coast exchanging cloth, jade, fish, and pottery. Perhaps they have heard of your friend. You ask around. No one has heard of Tom or seen him, until one day, a trader arrives who has heard rumors of a strange young man with white skin. He is being held captive on Isla Mujeres, the trader tells you."
          ],
          image: <#T##String?#>,
          edges: [85,86]),
     
     Node(id: 34,
-         paragraphs: [
-         
+         paragraphs: ["The crowd parts further as you and Manuel walk after the priests and priestess. You begin to climb the steep stone steps. When you reach a ledge, the priestess watches you closely as the five priests form a tight square around you. Their long black hair is covered with a sticky evil-smelling substance. You ask Manuel what it is."
          ],
          image: <#T##String?#>,
          edges: [35]),
     
     Node(id: 35,
-         paragraphs: [
-         
+         paragraphs: ["\"Blood. It is the blood of the victims of the sacrifices. The priests think it makes them stronger. You will see. It is called itza!\"", "You pull back in horror.", "\"Sacrifices? What for? What kind of sacrifices?\"", "\"Be patient. Just follow the priests. Do not show fear, whatever you do.\"", "Manuel hangs back. The priests alongside you climb the steep steps of the Temple of the Magicians, one by one. At the top of the pyramid, there is a small room with a stone altar stained with brownish, dried blood.", "\"You are now going to be one of us,\” says the head priest, as if he's known you before. \"Welcome to the Mayan priesthood, where men and women are ...\"", "But he does not finish. A blood curdling scream rises from below. What is going on?"
          ],
          image: <#T##String?#>,
          edges: [14,16]),
     
     Node(id: 37,
-         paragraphs: [
-         
+         paragraphs: ["You try to continue on course. But gale-force winds and huge waves force your ship in an easterly direction. It is all you can do to keep the ship from swamping. One sailor is swept overboard, his screams lost in the roar of the waves.", "\"Captain, can't you do anything?\" you scream out.", "He does not answer. The wind and sea take all his attention.", "For a whole day your boat is tossed about by the storm. Then, once again, the wind picks up in force. You are propelled through the seas as if your boat had a motor, instead of sails.", "\"Land! Land straight ahead,\" the look-out shouts. Then you all see it. Palm trees, white beaches, and high mountains. You have reached what someday will be called Cuba. The boat slams through the surf and grates to rest on the beach. You are met by a group of tall and bronze Arawak people with broad smiling faces. They are friendly and offer rest and food. They invite you to stay with them."
          ],
          image: <#T##String?#>,
          edges: [116,117]),
     
     Node(id: 38,
-         paragraphs: [
-         
+         paragraphs: ["You decide to go straight to Chichen Itza to talk to the police. First, you and Manuel drive to your hotel in Merida to spend the night. Merida was founded by the Spanish after their conquest of Mexico in the sixteenth century. Their old churches and fortresses give the town a Spanish flavor.", "\"Tomorrow we begin,\" Manuel says. \"Chichen Itza, the largest site of Mayan ruins, is famous as a center of lost power. It holds a huge pyramid, a domed observatory, a deep water hole or cenote, and the famed and feared ball court. In ancient times, the losers of the ball game also lost their lives.\"", "That night, you notice that Manuel is quiet. He clears his throat to speak. \"I have been thinking,\" Manuel begins. \"You may want to go to Uxmal first. While smaller than Chichen Itza, Uxmal is far older. The Temple of the Magicians at Uxmal is filled with mystery.\"", "\"That last day, Tom kept it a secret where he went,\" Manuel adds."
          ],
          image: <#T##String?#>,
          edges: [46,44]),
     
     Node(id: 39,
-         paragraphs: [
-         
+         paragraphs: ["You drew yellow. It is the straw of the ruler. You are immediately made the new ruler of the Toltecs. You rule until you die of old age at 93. Several times Manuel and Dr. Lopez try to get you to go back to the present, but you refuse. You enjoy being the ruler.", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 40,
-         paragraphs: [
-         
+         paragraphs: ["Manuel tells you these warriors have come from Chichen Itza. He introduces you to the officer in charge. On your way back to Chichen Itza, the officer speaks to you.", "\"There are two groups here. One group raids our enemies to get slaves or take revenge. The slaves are used for sacrifice. The soldiers in that unit are fast, quiet in the jungle, and ready to die if captured.\"", "\"The other group defends us against invaders. They are careful and watchful. They never give up. They will fight until the last one is dead.\""
          ],
          image: <#T##String?#>,
          edges: [43]),
-    
-    Node(id: 1,
-         paragraphs: [
-         
-         ],
-         image: <#T##String?#>,
-         edges: <#T##[Int]#>),
-    
+        
     Node(id: 42,
-         paragraphs: [
-         
+         paragraphs: ["\"No!\" you shout, \"I will never sacrifice a living being to any god for any reason. You are all It was a mistake to say that. The priests become crazy.\"", "It was a mistake to say that. The priests become very quiet and solemn. The sun is bright in the sky. Manuel is nowhere to be seen. The sound of a bird breaks the quiet as two of the priests move toward you. They are not smiling. One says, \"Since you will not perform the sacrifice, we will. You will be the victim.\"", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 43,
-         paragraphs: [
-         
+         paragraphs: ["\"Who are your enemies?\" you ask.", "\"Toltecs, a savage group who worship Smoking Mirror, their god of war and death. They are always invading us.\" Several warriors nod in agreement.", "The officer in command says, \"It's up to you. You can go on raids or stay here in defense.\""
          ],
          image: <#T##String?#>,
          edges: [48,49]),
     
     Node(id: 44,
-         paragraphs: [
-         
+         paragraphs: ["You've got a hunch that Tom might have gone to Uxmal. You go with Manuel to the bus station for the trip there. The trip is long and hot, but finally you arrive at the ruins of the city. The Temple of the Magicians looms over the land. Steep stone steps ascend to a smaller temple building on top of the pyramid. Across from the Temple of the Magicians is a large, rectangular building which the Spanish Conquistadors called the Nunnery. No one really knows what it was used for."
          ],
          image: <#T##String?#>,
          edges: [45]),
     
     Node(id: 45,
-         paragraphs: [
-         
+         paragraphs: ["\"What do you think, Manuel? Any ideas about its purpose?\" you ask.", "Manuel hesitates for a minute and says, \"Perhaps the building was the palace of the shamans. Maybe they conducted their magic there.\"", "Where should you start looking, at the Temple of the Magicians or the Nunnery? What would Tom have done if he had come to Uxmal?"
          ],
          image: <#T##String?#>,
          edges: [50,52]),
     
     Node(id: 46,
-         paragraphs: [
-         
+         paragraphs: ["Broad avenues lead out from the pyramid to other stone buildings, to courtyards, and to the evil ball court where Maya lost their lives if they lost the game. One avenue leads to the cenote, or giant well, which has taken the bodies of many sacrificial victims.", "A group of twenty people stand quietly at the base of El Castillo.", "Your eyes follow a finger pointing up into the sky. The top of the pyramid is glowing with a bright red color! Where is it coming from?", "A large spacecraft hovers over the pyramid. \"What does it mean, Manuel? What's happening?\"", "You are frightened. \"These Mayan ruins are contact points for other planets. That group of people has been asked to leave Earth for the planet Merganatic.\"", "You believe in UFOS, but now that you are seeing one, it is frightening. \"Manuel, this is incredible. Why is that thing here?\""
          ],
          image: <#T##String?#>,
          edges: [47]),
     
     Node(id: 47,
-         paragraphs: [
-         
+         paragraphs: ["\"Earth is seen as a leading planet. Other civilizations want to learn from us. They send emissaries to ask us to return with them to an outergalactic congress on the rights of life in the universe. That is the last group of people attending the congress to depart. If you think Tom may have gone on the mission, you should join them.\"", "Is Manuel making this up? There is no denying the bright red glow on top of the pyramid."
          ],
          image: <#T##String?#>,
          edges: [62,64]),
     
     Node(id: 48,
-         paragraphs: [
-         
+         paragraphs: ["You want to see action, but are you prepared to fight? It's one thing to travel in time; it's quite something else to be a warrior involved in real fighting. You could never kill anybody. And what if you have to defend yourself? Still, you decide to join the raids.", "After three weeks of training, the warrior chief says, \"Okay, now it is time. You will go on a raid to Ixtal, three days from here.\""
          ],
          image: <#T##String?#>,
          edges: [67,68]),
     
     Node(id: 49,
-         paragraphs: [
-         
+         paragraphs: ["You stay in Chichen Itza. The days are pleasant and you make good friends among the young Mayan warriors. Your desire to find Tom fades, but you vow to keep a sharp look-out.", "The Maya are farmers, traders, craftsmen, and warriors. Settlements of houses spread out from Chichen Itza and Uxmal. In this crowded land, water is scarce.", "Some of the people tend to the fields while others work making cotton cloth for trading with other Mayan centers. People come to Chichen Itza for great ceremonies, to trade, and to have their disputes settled by the priests or nobles. One day, several of the warriors come together.", "A tall man with broad shoulders speaks. \"Would you like to play the ball game?\" he asks.", "He explains the game and shows you the court and the hard rubber ball. The object is to get the ball through the carved stone hoop. The game looks fast and difficult and the man tells you it takes much skill, and that the teams that play in the great ball court on ceremonial days face a real test. If they win, they are heroes; but if they lose, they are used as sacrifices in the ceremonies that follow.", "They say that the ball game represents the struggle between Lords of Life and Lords of Death. You are selected to join one of the teams."
          ],
          image: <#T##String?#>,
          edges: [72]),
     
     Node(id: 50,
-         paragraphs: [
-         
+         paragraphs: ["The words \"Temple of the Magicians\" excite you. You walk toward the huge pyramid, but a crowd of tourists is busy snapping cameras and pushing and shoving. They surround the base.", "You stand for a moment waiting for the crowd to clear, when an old man with wrinkled skin wearing the colorful shawl of the Maya shuffles up to you.", "\"Come with me,\" he says, beckoning with a hand crippled with age. \"I will take you to see a very deep water hole, a secret cenote. Water is scarce in this dry land and the cenotes are the most important reasons for choosing a place to live. Without water, there is no chance to live. You will be amazed at what I will show you at this cenote.\"", "You look around, but Manuel is nowhere to be seen. Where has he gone?"
          ],
          image: <#T##String?#>,
          edges: [71,76]),
     
     Node(id: 52,
-         paragraphs: [
-         
+         paragraphs: ["The building called the Nunnery is intricately designed with carvings of birds, snakes, and humanlike creatures. There are few clues as to what the building was used for. The rooms are too dark to have been used for living quarters.", "Poking around in a dark room with a flashlight, you see a piece of white paper stuck to the far wall. It says:", "Hotel Maya, Chichen Itza, Room 927 Thursday night You must come. There is danger."
          ],
          image: <#T##String?#>,
          edges: [53]),
     
     Node(id: 53,
-         paragraphs: [
-         
+         paragraphs: ["You puzzle over the note. It is Thursday. Is this note for you? How could it be? What should you do? A figure moves quickly from an adjoining room. Did that person follow you and leave the note?"
          ],
          image: <#T##String?#>,
          edges: [75,77]),
     
     Node(id: 54,
-         paragraphs: [
+         paragraphs: [ 
          
          ],
          image: <#T##String?#>,
