@@ -238,70 +238,61 @@ let nodes = [
          edges: [48,49]),
     
     Node(id: 44,
-         paragraphs: [
-         
+         paragraphs: ["You've got a hunch that Tom might have gone to Uxmal. You go with Manuel to the bus station for the trip there. The trip is long and hot, but finally you arrive at the ruins of the city. The Temple of the Magicians looms over the land. Steep stone steps ascend to a smaller temple building on top of the pyramid. Across from the Temple of the Magicians is a large, rectangular building which the Spanish Conquistadors called the Nunnery. No one really knows what it was used for."
          ],
          image: <#T##String?#>,
          edges: [45]),
     
     Node(id: 45,
-         paragraphs: [
-         
+         paragraphs: ["\"What do you think, Manuel? Any ideas about its purpose?\" you ask.", "Manuel hesitates for a minute and says, \"Perhaps the building was the palace of the shamans. Maybe they conducted their magic there.\"", "Where should you start looking, at the Temple of the Magicians or the Nunnery? What would Tom have done if he had come to Uxmal?"
          ],
          image: <#T##String?#>,
          edges: [50,52]),
     
     Node(id: 46,
-         paragraphs: [
-         
+         paragraphs: ["Broad avenues lead out from the pyramid to other stone buildings, to courtyards, and to the evil ball court where Maya lost their lives if they lost the game. One avenue leads to the cenote, or giant well, which has taken the bodies of many sacrificial victims.", "A group of twenty people stand quietly at the base of El Castillo.", "Your eyes follow a finger pointing up into the sky. The top of the pyramid is glowing with a bright red color! Where is it coming from?", "A large spacecraft hovers over the pyramid. \"What does it mean, Manuel? What's happening?\"", "You are frightened. \"These Mayan ruins are contact points for other planets. That group of people has been asked to leave Earth for the planet Merganatic.\"", "You believe in UFOS, but now that you are seeing one, it is frightening. \"Manuel, this is incredible. Why is that thing here?\""
          ],
          image: <#T##String?#>,
          edges: [47]),
     
     Node(id: 47,
-         paragraphs: [
-         
+         paragraphs: ["\"Earth is seen as a leading planet. Other civilizations want to learn from us. They send emissaries to ask us to return with them to an outergalactic congress on the rights of life in the universe. That is the last group of people attending the congress to depart. If you think Tom may have gone on the mission, you should join them.\"", "Is Manuel making this up? There is no denying the bright red glow on top of the pyramid."
          ],
          image: <#T##String?#>,
          edges: [62,64]),
     
     Node(id: 48,
-         paragraphs: [
-         
+         paragraphs: ["You want to see action, but are you prepared to fight? It's one thing to travel in time; it's quite something else to be a warrior involved in real fighting. You could never kill anybody. And what if you have to defend yourself? Still, you decide to join the raids.", "After three weeks of training, the warrior chief says, \"Okay, now it is time. You will go on a raid to Ixtal, three days from here.\""
          ],
          image: <#T##String?#>,
          edges: [67,68]),
     
     Node(id: 49,
-         paragraphs: [
-         
+         paragraphs: ["You stay in Chichen Itza. The days are pleasant and you make good friends among the young Mayan warriors. Your desire to find Tom fades, but you vow to keep a sharp look-out.", "The Maya are farmers, traders, craftsmen, and warriors. Settlements of houses spread out from Chichen Itza and Uxmal. In this crowded land, water is scarce.", "Some of the people tend to the fields while others work making cotton cloth for trading with other Mayan centers. People come to Chichen Itza for great ceremonies, to trade, and to have their disputes settled by the priests or nobles. One day, several of the warriors come together.", "A tall man with broad shoulders speaks. \"Would you like to play the ball game?\" he asks.", "He explains the game and shows you the court and the hard rubber ball. The object is to get the ball through the carved stone hoop. The game looks fast and difficult and the man tells you it takes much skill, and that the teams that play in the great ball court on ceremonial days face a real test. If they win, they are heroes; but if they lose, they are used as sacrifices in the ceremonies that follow.", "They say that the ball game represents the struggle between Lords of Life and Lords of Death. You are selected to join one of the teams."
          ],
          image: <#T##String?#>,
          edges: [72]),
     
     Node(id: 50,
-         paragraphs: [
-         
+         paragraphs: ["The words \"Temple of the Magicians\" excite you. You walk toward the huge pyramid, but a crowd of tourists is busy snapping cameras and pushing and shoving. They surround the base.", "You stand for a moment waiting for the crowd to clear, when an old man with wrinkled skin wearing the colorful shawl of the Maya shuffles up to you.", "\"Come with me,\" he says, beckoning with a hand crippled with age. \"I will take you to see a very deep water hole, a secret cenote. Water is scarce in this dry land and the cenotes are the most important reasons for choosing a place to live. Without water, there is no chance to live. You will be amazed at what I will show you at this cenote.\"", "You look around, but Manuel is nowhere to be seen. Where has he gone?"
          ],
          image: <#T##String?#>,
          edges: [71,76]),
     
     Node(id: 52,
-         paragraphs: [
-         
+         paragraphs: ["The building called the Nunnery is intricately designed with carvings of birds, snakes, and humanlike creatures. There are few clues as to what the building was used for. The rooms are too dark to have been used for living quarters.", "Poking around in a dark room with a flashlight, you see a piece of white paper stuck to the far wall. It says:", "Hotel Maya, Chichen Itza, Room 927 Thursday night You must come. There is danger."
          ],
          image: <#T##String?#>,
          edges: [53]),
     
     Node(id: 53,
-         paragraphs: [
-         
+         paragraphs: ["You puzzle over the note. It is Thursday. Is this note for you? How could it be? What should you do? A figure moves quickly from an adjoining room. Did that person follow you and leave the note?"
          ],
          image: <#T##String?#>,
          edges: [75,77]),
     
     Node(id: 54,
-         paragraphs: [
+         paragraphs: [ 
          
          ],
          image: <#T##String?#>,
