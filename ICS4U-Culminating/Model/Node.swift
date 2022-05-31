@@ -837,251 +837,366 @@ let nodes = [
          
          ],
          image: <#T##String?#>,
-         edges: [111,110]),
+         edges: [
+            Edge(destinationId: 111,
+                 prompt: "If you agree to try to lead them to Chichen Itza, turn to page 111."),
+            
+            Edge(destinationId: 110,
+                 prompt: "If you refuse, turn to page 110.")
+         ]),
     
     Node(id: 96,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 97,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [112,113]),
+         edges: [
+            Edge(destinationId: 112,
+                 prompt: "If you try to enter the cave through the small hole in the landslide, turn to page 112."),
+            
+            Edge(destinationId: 113,
+                 prompt: "If you decide to return to the surface and go for help, turn to page 113.")
+         ]),
     
     Node(id: 98,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [114,115]),
+         edges: [
+            Edge(destinationId: 114,
+                 prompt: "If you agree to go to Merida, turn to page 114."),
+            
+            Edge(destinationId: 115,
+                 prompt: "If you agree to go to Cancun, turn to page 115.")
+         ]),
     
     Node(id: 99,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 100,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [101]),
+         edges: [
+            Edge(destinationId: 101, prompt: "Turn to the next page.")
+         ]),
     
     Node(id: 101,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [118,119]),
+         edges: [
+            Edge(destinationId: 118,
+                 prompt: "If you try to organize a medical team, turn to page 118."),
+            
+            Edge(destinationId: 119,
+                 prompt: "If you decide to leave Tulum, turn to page 119.")
+         ]),
     
     Node(id: 102,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [103]),
+         edges: [
+            Edge(destinationId: 103, prompt: "Turn to the next page.")
+         ]),
     
     Node(id: 103,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 104,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [105]),
+         edges: [
+            Edge(destinationId: 105, prompt: "Turn to the next page.")
+         ]),
     
     Node(id: 105,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 106,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 107,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 108,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 109,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 110,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [39,122,131]),
+         edges: [
+            Edge(destinationId: 39,
+                 prompt: "If you draw a yellow straw, turn to page 39."),
+            
+            Edge(destinationId: 122,
+                 prompt: "If you draw a blue straw, turn to page 122."),
+            
+            Edge(destinationId: 131,
+                 prompt: "If you draw a red straw, turn to page 131.")
+         ]),
     
     Node(id: 111,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [13,21]),
+         edges: [
+            Edge(destinationId: 13,
+                 prompt: "If you see this as an opportunity to escape the Toltecs, turn to page 13."),
+            
+            Edge(destinationId: 21,
+                 prompt: "If you accept this royal privilege, turn to page 21.")
+         ]),
     
     Node(id: 112,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 113,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 114,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [120,121]),
+         edges: [
+            Edge(destinationId: 120,
+                 prompt: "If you believe them and decide to fight for their cause, turn to page 120."),
+            
+            Edge(destinationId: 121,
+                 prompt: "If you don't believe them and decide to spy on them, turn to page 121.")
+         ]),
     
     Node(id: 115,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 116,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [123,126]),
+         edges: [
+            Edge(destinationId: 123,
+                 prompt: "If you return to Chichen Itza, turn to page 123."),
+            
+            Edge(destinationId: 126,
+                 prompt: "If you go to Isla Mujeres, turn to page 126.")
+         ]),
     
     Node(id: 117,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [127,128]),
+         edges: [
+            Edge(destinationId: 127,
+                 prompt: "If you fight the potion wearing off, turn to page 127."),
+            
+            Edge(destinationId: 128,
+                 prompt: "If you let things take their course, turn to page 128.")
+         ]),
     
     Node(id: 118,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 119,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [129,130]),
+         edges: [
+            Edge(destinationId: 129,
+                 prompt: "If you obey the priests and leave quietly, turn to page 129."),
+            
+            Edge(destinationId: 130,
+                 prompt: "If you ignore their threats, turn to page 130.")
+         ]),
     
     Node(id: 120,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 121,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 122,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 123,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [124]),
+         edges: [
+            Edge(destinationId: 124, prompt: "Turn to the next page.")
+         ]),
     
     Node(id: 124,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 126,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 127,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 128,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 129,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 130,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
     Node(id: 131,
          paragraphs: [
          
          ],
          image: <#T##String?#>,
-         edges: [132]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
 ]
 
