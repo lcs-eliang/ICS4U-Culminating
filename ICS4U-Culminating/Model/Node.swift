@@ -292,288 +292,241 @@ let nodes = [
          edges: [75,77]),
     
     Node(id: 54,
-         paragraphs: [ 
-         
+         paragraphs: ["The priests wait impatiently as you ramble on about not wanting to kill anyone. Their eyes gleam and their bodies shake as though with fever.", "\"You must do it,\" one of them shouts at you. \"You must!\"", "\"But it isn't right. I can't kill. I won't kill.\"", "One of the priests lunges at you, but you duck to one side. He tumbles down the steps of the temple. The crowd of people standing below look up in horror. In the confusion, you sneak down the other side of the pyramid. Although the steps are extremely steep, you make it and manage to lose yourself in the crowd. You ask a man where the warriors can be found. He points to the courtyard. You decide to join them. Nothing can be more warlike than life with the priests. Perhaps the warriors will be more civilized."
          ],
          image: <#T##String?#>,
          edges: [40]),
     
     Node(id: 56,
-         paragraphs: [
-         
+         paragraphs: ["You follow the path hoping you're going in the right direction. At first you feel as though your lungs might burst from running so hard. Then you feel the muscles in your legs begin to tighten. You don't think you can take another step. A root catches your foot, and you fall forward. The last thing you remember is the earth rushing toward you. You black out.", "When you come to, you examine your head and arms and legs. Everything is all right except for a bump on your forehead. Your mouth is dry and your tongue feels swollen.", "You call out, \"Anybody there?\" Maybe that's a dumb thing to do. The enemy could be nearby and might hear you."
          ],
          image: <#T##String?#>,
          edges: [89,90]),
     
     Node(id: 57,
-         paragraphs: [
-         
+         paragraphs: ["\"So, you thought you could escape, did you? You are perfect for our next sacrifice to the rain god.\" It is the enemy chief talking. You have been captured.", "An old priestess with deep wrinkles on her face rushes up to you and says, \"No, we don't need a sacrifice. We need a slave to work for us in the temple. This prisoner will do.\" Her name is Muscla and she has a great deal of power, for the chief listens to her and agrees.", "\"Take this pest, do what you wish! We'll catch others.\"", "Later that day you are put into a dark room in the back of a small temple. It smells of wood smoke. As you enter you notice the imprint of a hand-a red hand-on the wall. You have read about this symbol, but what does it mean?", "Then a strange thing begins to happen. Your vision blurs and musical notes fill the air. When you reach out to touch the wall, you feel dizzy and begin to stumble. That's it! The potion is wearing off. You are on your way back to the present.", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 58,
-         paragraphs: [
-         
+         paragraphs: ["Tracking the jaguar isn't easy. The cat is sly and moves quietly through the bush. After stalking it, you understand why the Maya worship the jaguar. It is one of their important gods. You think it is because the cat seems to have supernatural powers. You try to guess what its next move will be. Whenever you think the cat is ahead of you, it suddenly appears behind you or off to the side. Maybe the jaguar is tracking you? You become so absorbed in the pursuit that you lose all track of"
          ],
          image: <#T##String?#>,
          edges: [59]),
     
     Node(id: 59,
-         paragraphs: [
-         
+         paragraphs: ["time and place. You yell for Xha, but he's nowhere to be found. You don't know where to go or where to turn. You are lost!", "Then you hear sounds of people talking. None of them are Xha. They might be friends or they might be a band of enemy raiders. You hide behind some bushes and wait and watch."
          ],
          image: <#T##String?#>,
          edges: [93]),
     
     Node(id: 60,
-         paragraphs: [
-         
+         paragraphs: ["Your thirst wins out. You and Xha follow an old, unused path that winds between low-lying hills and thickets. The path ends abruptly at a cenote.", "You feel an overwhelming impulse to take a swim. \"Come on, Xha,\" you cry as you plunge into the cool, fresh water. Under the surface, you see a round opening so you swim toward it. It could either be a man-made tunnel or a natural cave. You come out into a huge underground cavern. In the corner of the cavern lies a pile of treasure: glittering gold, jade rings of the deepest green, and plates of silver, gold and jade. It is beautiful beyond your wildest imagination.", "Coming back up for air, you tell Xha what you saw, and both of you descend, and enter the tunnel. \"Wow, it's the lost treasure of the Plumed Serpent!\" says Xha.", "You stare at this treasure in amazement. You want to claim it."
          ],
          image: <#T##String?#>,
          edges: [96,97]),
     
     Node(id: 61,
-         paragraphs: [
-         
+         paragraphs: ["You have heard people speak of the hill country to the south. They tell stories of a great rainforest, large temples, pyramids, and rich soil. They also speak of warfare. People from the west have been raiding the prosperous towns in the south in search of prisoners and treasure.", "You set out with a guide toward the fabled hills in the south. For days you travel under the blistering sun. Water is scarce, and your food runs out. After a while you begin to doubt that your guide knows where he is going. You wish you knew more about astronomy so that you could use the stars to guide the way. You grow weaker and weaker from lack of food and water. After almost eight days you can barely walk. You must have some water. But there is none.", "You are never seen or heard from again. Your last thoughts are that this is probably what happened to Tom.", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 62,
-         paragraphs: [
-         
+         paragraphs: ["One by one, the group standing at the pyramid enters the spacecraft by the transporter beam. You notice that halfway to the spacecraft, their bodies begin to glow. No one seems to be afraid.", "Gaining confidence, you step into the transporter beam and are carried up into the spacecraft. You hear nothing as you shoot up and away into the far reaches of the universe, to the planet Merganatic and the great Congress on Intergalactic Life. You wonder why the Mayan sites were chosen as contact points. Their brutal and complex society seems an odd choice for other planets. Who knows what lies ahead?", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 64,
-         paragraphs: [
-         
+         paragraphs: ["You laugh out loud and point at the spacecraft and the people entering it.", "\"Great show, Manuel, great show! Tell me, how did you do it? What is it, the set for some movie?\"", "Manuel does not smile and does not speak. He shakes his head and moves off to join the group who are going up the transporter beam into the spacecraft."
          ],
          image: <#T##String?#>,
          edges: [22]),
     
     Node(id: 65,
-         paragraphs: [
-         
+         paragraphs: ["\"Yes, I will perform the sacrifice,\" you whisper. \"Speak up, we can't hear you,\" the priest with the knife yells at you.", "\"Yes, I will do the sacrifice, but what for?\" You try to hide your fear, but you can't.", "The head priest steps forward and says to you, \"Water is scarce, so we sacrifice to the god Chac for rain. Crops die in the fields. Sickness takes our people. War ruins us. Each time we sacrifice, we hope the gods will treat us better and keep us from harm.\"", "\"But,\" you say, \"what can killing someone or something do? I mean, it's crazy.\""
          ],
          image: <#T##String?#>,
          edges: [66]),
     
     Node(id: 66,
-         paragraphs: [
-         
+         paragraphs: ["\"No more talk. Act. Take the knife. Bring the sacrifice to Chac.\" The priestess points to the altar.", "A slave holding a chicken climbs the temple steps. Behind him, two soldiers lead a prisoner kicking and screaming. Looking into the prisoner's eyes, you see the fear of death and the pleading to be saved.", "What can you do?"
          ],
          image: <#T##String?#>,
          edges: [54,80]),
     
     Node(id: 67,
-         paragraphs: [
-         
+         paragraphs: ["You travel by foot through the jungle to Ixtal. Your attack is a complete success. The element of surprise works very well, and your band had the upper hand from the first. Even the chickens and dogs belonging to the villagers ran for cover. Dust rose as you raced around. A large group of people led by a woman escaped into the surrounding jungle, but you and your band let them go.", "You return triumphant, happy that no one was killed or hurt. Back in Chichen Itza, Manuel welcomes you and says, \"So, you like leading the life of a Maya. Well, I'm not surprised. Your friend Tom did not like it. He paid the supreme price.\"", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 68,
-         paragraphs: [
-         
+         paragraphs: ["You watch the fighting from behind a bush. Off to the right you see three of the enemy pulling on a large hemp rope. It releases a bent tree. The tree has a bucket filled with rocks that shower down on you.", "\"Watch out!\" you scream. \"Duck!\"", "Two of your warriors are knocked out. A flurry of arrows and spears fills the air. Three more of your warriors are wounded. Shouts and screams pierce the air.", "\"Escape!\" your captain yells.", "The attack is a complete failure. The enemy had more strength and courage than you ever imagined.", "When you try to retreat, you become confused. Where do you go? You are cut off from the other warriors."
          ],
          image: <#T##String?#>,
          edges: [56,57]),
     
     Node(id: 70,
-         paragraphs: [
-         
+         paragraphs: ["\"I'm not playing that game,\" you say. \"Find another sucker. Those are the craziest rules I've ever heard. No way. Lose and you die?\"", "Several of the warriors nod in agreement, but most of them like the idea of being heroes if they win. The thought of death doesn't frighten them as much as it does you. Some say that it is considered an honor to be sacrificed to a god. Not for you though.", "A young warrior, Xha, suggests a hunt for a jaguar that has been seen near the maize fields instead. You agree to go.", "The day is hot, and the track of the jaguar is hard to follow. By late afternoon you are far from the maize and squash fields. Without your friends, you would be lost. You are almost out of water and night is coming on."
          ],
          image: <#T##String?#>,
          edges: [58,60]),
     
     Node(id: 71,
-         paragraphs: [
-         
+         paragraphs: ["You have always been an adventurer, so of course you follow the old man to the secret cenote. The trail is a faint path through the tangle of bushes, and within fifteen minutes you are completely lost. \"Hey, old man, where is this cenote of yours?\"", "He turns and smiles at you.", "\"Here it is.\"", "But instead of a cenote, you find yourself surrounded by three men. One of them holds a gun, and the other two have knives. They do not smile.", "\"Give us your money.\"", "You fumble for your wallet. There are two American ten-dollar bills and 300 Mexican pesos. You hand them over to the men. They tie you up with a rough hemp rope, load you onto a donkey, and move off into the jungle.", "\"We will hold you for ransom. Your people will pay and pay plenty. If they don't, you die. We have another hostage, you will keep him company.\"", "You hope that your family will be able to come up with the ransom money. You also hope that the other hostage is Tom.", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 72,
-         paragraphs: [
-         
+         paragraphs: ["Before you know it, you are on the field in the ball court. Shouting fills the air as the two teams practice. A large crowd gathers to watch.", "Six priests, three elders, and a group dressed in clothes of golden cloth march in, take their honored places, and signal for the game to begin.", "What if you lose? Your eyes quickly travel to the steps of the pyramid called El Castillo. You have heard of victims having their hearts ripped out and then being thrown down the steps into the courtyard.", "The game is long and hard. The score is close. Your heart pounds. With loud screams and yells, a raiding party bursts into the ball court. They are Toltecs, a tribe of fierce warriors from the north"
          ],
          image: <#T##String?#>,
          edges: [73]),
     
     Node(id: 73,
-         paragraphs: [
-         
+         paragraphs: ["and west. You run off the ball court and hide in the bushes next to the big cenote. Others are not so lucky and die in agony.", "The Toltecs fan out and hunt for survivors. As you try to escape, you are spotted and chased. Your heart is pounding, you feel as though life is already over. Tom appears out of nowhere.", "\"Come with me. . . now!\" he shouts. You join him and run through a stone arch. Suddenly you are back in the present.", "\"Tell me, Tom, was this true what we did?\" you gasp. \"As true as true gets,\" he replies.", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 75,
-         paragraphs: [
-         
+         paragraphs: ["Who put the note in the darkened room? Who could have known you would be there and would find it? It might well be the secret forces of the Maya at work-forces too hidden for most humans to understand. You are fascinated.", "You check into the Hotel Maya. At nine o'clock when you walk down the corridor to Room 327, soldiers leap out of Rooms 328 and 329 and arrest you. They are all heavily armed. You can smell the oil on the weapons. Their captain speaks to you in Spanish, but then switches to English when you don't reply.", "\"So, you are the spy we have been waiting for. We knew we would catch you. If you are wondering what happened to your friend in Room 327, I'll tell you. He was captured two days ago, and is now in jail. You revolutionaries are all the same.\"", "The captain orders the soldiers to take you away under arrest."
          ],
          image: <#T##String?#>,
          edges: [83,84]),
     
     Node(id: 76,
-         paragraphs: [
-         
+         paragraphs: ["You ignore the old man. Who knows what he is after?", "As you walk away from him, a rock with a piece of paper wrapped around it drops at your feet. You look up, startled, but you see no one who could have dropped this rock.", "The paper contains a short message that says:", "RETURN TO THE NUNNERY. MEET WITH US IN THE SEVENTH ROOM", "The message is signed with a red handprint. What should you do?", "Manuel is walking back toward you. You rush over and show him the note. Manuel looks at the note and shakes his head.", "\"Leave it alone. It could be dangerous.\""
          ],
          image: <#T##String?#>,
          edges: [78,81]),
     
     Node(id: 77,
-         paragraphs: [
-         
+         paragraphs: ["Don't like taking chances, do you? Okay, go ahead. The next room is small and as dark as the others. You step cautiously into the room. Suddenly the floor beneath you gives way and you fall into a bright blue space, gathering speed at the rate of thirty-two feet per second. The rush of air against you flattens your nose against your face, slicks your hair back, and squishes your lips.", "The trap door opened onto a chute into the very heart of the Nunnery. Three levels below ground lies a secret ceremonial chamber where magic was conducted. Now you are but a participant in a great ancient Mayan ceremony.", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 78,
-         paragraphs: [
-         
+         paragraphs: ["You see two policemen near the tourist buses. \"We're sorry but we can't help you. We are too busy. We are trying to find one of your countrymen who vanished several weeks ago.\"", "You show them the note. When they see the sign of the red hand, they become very excited.", "\"Wait! Just one minute. Don't leave. Stay right there.\" They talk in hushed tones, and then they radio their headquarters.", "\"The captain is coming right away.\"", "Soon you hear the whirring of a helicopter. When it lands in the courtyard, three men get out.", "\"Let me see the note.\" It is the captain speaking. He is a heavy man with a black mustache.", "\"Aha! I see. The red hand. This is the mark of the revolutionaries. How did you come by this note? Do you know the American named Tom?\""
          ],
          image: <#T##String?#>,
          edges: [98,99]),
     
     Node(id: 80,
-         paragraphs: [
-         
+         paragraphs: ["Human sacrifices! Throughout history, people have been sacrificed to appease gods. Fortunately, this time it is the chicken that is to be sacrificed. Even so, the very idea of drawing the stone knife across the chicken's throat and watching its lifeblood flow onto the altar gives you the creeps.", "You decide to try and bring an end to this needless sacrifice. Perhaps, if you volunteer to work with the prisoners who are to be sacrificed, you will be able to devise a plan to help them escape. Time is running out, because the ceremony of sacrifice is only three weeks away. Maybe Tom is being held prisoner here."
          ],
          image: <#T##String?#>,
          edges: [87,88]),
     
     Node(id: 81,
-         paragraphs: [
-         
+         paragraphs: ["The red handprint is ominous. What can it mean? You enter the seventh room in the Nunnery building. Although it is dark inside, you see a face. It is luminous, and glows with a soft, yellowish light. A person clothed in silver with golden armbands stands in the middle of the room.", "\"You and three others have been chosen to journey to far space. Uxmal is our earth base. Join is if you have the courage. The earth as we know it will no longer be safe.\"", "You listen in amazement to all that he says. It sounds like the prediction made by Mayan priests hundreds and hundreds of years ago. It is scary, because maybe they were right.", "Tom suddenly appears, and it is clear he has already been to space and back. \"Come with us,\" he tells you. \"It is time. time.\"", "You decide to go with them.", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 83,
-         paragraphs: [
-         
+         paragraphs: ["\"Captain, it's all a mistake. I was on my way to my own room. I just came to this room by accident. I am no revolutionary or spy. You must believe me.\"", "The captain laughs. \"They all say that. You are all the same. Spies, radicals, thieves. We have a way to deal with you!\"", "You are handcuffed, put into a jeep and driven to Merida. There, you are thrown into a small, damp, evil-smelling cell in the local jail. The captain comes to see you the next day to tell you that the judge has given you a thirty-year sentence for plotting to overthrow the government.", "\"But I've had no trial,\" you protest.", "\"We caught you red-handed, and we don't believe in trials anyway. These are dangerous times. You can call this the Revenge of the Maya. You have angered their ancient gods!\" he laughs.", "He stubs out a cigarette in the earthen floor, sticks his short, brown hands in his pockets, and walks away from your cell. You grab the bars of the cell and scream for help. Three guards at the end of the corridor just laugh. You will be in jail for a long time.", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 84,
-         paragraphs: [
-         
+         paragraphs: ["\"But Captain, this is all a mistake. I am here to find a lost friend. I am no spy.\"", "The captain leads you into a room where three men are seated at a table. They look up when you enter. The thin one says, \"Wrong person! Who is this? That's not the one we want.\"", "The man says, \"Let the prisoner go. We are just wasting valuable time. The spy has had warning and time to escape.\"", "Is Tom the \"spy\" they are talking about? \"As for you, we have decided to deport you,\" the captain adds.", "\"Deport me? But what about my friend Tom?\" you cry.", "\"Tom will have to take care of himself,\" is the stern reply.", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 85,
-         paragraphs: [
-         
+         paragraphs: ["You arrange to get to Isla Mujeres by giving your watch to a ship captain. \"Come along then. We are leaving right away,\" the captain says after you hand over your watch.", "You cast off, and later that day, as the boat cuts through the water, you see black storm clouds gathering to the east.", "\"Captain, looks like a blow coming.\"", "\"The storms here are fierce.\" Suddenly the water is savage, a deadly dark green color.", "All crew members are called on deck. But the storm breaks fast. Vicious waves pound the hull, and gale-force winds rip at the sails. The waves try to wrench the tiller from your hands. The rough water stings your eyes and drenches your clothes.", "The captain asks you what you want to do."
          ],
          image: <#T##String?#>,
          edges: [37,102]),
     
     Node(id: 86,
-         paragraphs: [
-         
+         paragraphs: ["You don't believe Tom has been out here in Cozumel. It's your instinct. In fact, you're beginning to feel that your search for Tom is a lost cause. But ... maybe you should check out Tulum, down the coast before giving up entirely. . . ."
          ],
          image: <#T##String?#>,
          edges: [100,104]),
     
     Node(id: 87,
-         paragraphs: [
-         
+         paragraphs: ["Escape from the temple is a problem. Guards are alert to any noise or movement. But the warrior prisoners from other cities in the Mayan world know that it is their only chance. They don't want to be sacrificed to the Lords of Death in the Underworld.", "Together, you wait until nightfall. Only the sound of insects fills the air. You creep forward, overpower two guards and spread out into the darkened courtyard of the temple.", "The escape is a success! The guards were easy to overpower. Maybe they don't really believe in sacrifices either? Could it be that only the priests want the sacrifices in order to control the people by fear? The terrible beauty of Mayan beliefs is not for everyone."
          ],
          image: <#T##String?#>,
          edges: [106,107]),
     
     Node(id: 88,
-         paragraphs: [
-         
+         paragraphs: ["\"Manuel, help! I didn't bargain for this.\" Once again your mysterious friend appears. He holds out his clenched fists for you to make your choice. \"Choose the right hand or the left hand." "What kind of choice is that, Manuel? That's just rolling dice.\"", "Manuel looks at you long and hard. His black eyes almost burn through you. \"The choices lie deep within you. Do not hesitate. Choose now.\""
          ],
          image: <#T##String?#>,
          edges: [108,109]),
     
     Node(id: 89,
-         paragraphs: [
-         
+         paragraphs: ["Your cries for help have been heard by two of your fellow warriors. They are at your side now and help you to your feet. You are groggy, but with their help you stumble on through the jungle for more than three hours. The cries of your pursuers grow fainter.", "Finally, you are able to stop and rest, hidden by a small rock outcropping. One of the warriors cleans out the cut on your forehead and squeezes the juices from a plant into your wound.", "The three of you rest for the night, taking turns keeping a watchful eye on the surrounding jungle.", "When the orange sun finally appears in the sky, you all give thanks and continue back to Chichen Itza. \"My friends, without you, I would be lost. I owe my life to you.\"", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 90,
-         paragraphs: [
-         
+         paragraphs: ["You lie on the ground feeling dizzy and sick to your stomach. The Earth spins around and the colors you see are a blur. You grip a rock in your right hand, trying to hold on. Then you faint.", "When you awaken you are cold, hungry, stiff, and alone. The call of an owl echoes in the jungle. Sounds of twigs snapping and dry leaves rustling seem louder than they would if you weren't frightened.", "Two people appear, creeping from hiding places between first one, then another, tree. You hold your breath and don't move a muscle. They are coming toward you. You can almost feel one of their spears pushing into your back."
          ],
          image: <#T##String?#>,
          edges: [94]),
     
     Node(id: 93,
-         paragraphs: [
-         
+         paragraphs: ["You don't know who these people are or where they have come from, but talking to them is worth the risk. You couldn't survive long in this desolate area alone without food and water. You sneak toward them through the jungle, fearful of making even the slightest noise. The talking grows louder.", "Peering around a clump of bushes, you see a group seated around a small fire. They are eating. The food smells good and you are very hungry. You step out from behind the tree. Before you have a chance to say anything, two men jump to their feet. Several grab their short spears. They surround you.", "\"Hey, I'm friendly. I'm not an enemy. I'm lost.\" The leader shouts commands."
          ],
          image: <#T##String?#>,
          edges: [95]),
     
     Node(id: 94,
-         paragraphs: [
-         
+         paragraphs: ["As they get closer, you realize that the only things they are carrying in their hands are cameras! They have been creeping around to take pictures of the rare birds in the area. Your time potion has worn off. You must have been out cold for a whole day.", "Soon you are being rushed to the hospital. As you lean back in the ambulance, you smile weakly at those two kind people who have rescued you. You don't bother starting in on the story of your time travel. You know they'll never believe you.", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 95,
-         paragraphs: [
-         
+         paragraphs: ["\"Tie the prisoner up. Quick!\"", "Rough hemp rope binds your arms and legs. You are suddenly pushed to the ground. The rope bites at your wrists.", "\"Where are you from? Tell us or you die.\"", "\"I'm from Chichen Itza.\" You try to hide your trembling.", "The leader smiles an evil smile.", "\"We are Toltecs. You Maya are fools. We will conquer you. Now lead us to your city.\"", "\"I'm lost.\"", "\"Liar! Lead us to Chichen Itza and maybe we'll send you back north to Teotihuacan with the other prisoners.\" He points at a sullen group of Maya who are tied up just as you are. You recognize Xha among them."
          ],
          image: <#T##String?#>,
          edges: [111,110]),
     
     Node(id: 96,
-         paragraphs: [
-         
+         paragraphs: ["The lure of gold is great. From the beginning of time people have worshiped the shiny metal. They have fought wars, plundered cities, and committed murder in its name. Some say gold has a curse on it.", "You lose all track of time and place. You seat yourself in front of the treasure and feel the smooth metal. Time passes quickly, until a rumbling sound wakens you from your dreams of wealth. Rocks tumble from the roof of the cavern; boulders slide down and seal off the cave. The air grows hot. Soon the oxygen will be gone.", "You are finished. You are sealed in the cave by an earthquake. Is it the revenge of the ancient Maya?", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 97,
-         paragraphs: [
-         
+         paragraphs: ["Leaving Xha, you run as fast as you can out of the cave, and along the path back to Chichen Itza. There, you find Manuel.", "\"Manuel, Manuel, I want to go back to modern times. Please send me back.\"", "Manuel studies your face. He does not smile. \"If that is your wish, it will be done. But don't be hasty.\"", "\"I want to go. Now!\"", "Suddenly you are in the present time, driving along a modern road built over the old path. You want to see if you can find the cenote where the gold was hidden in the past. When you reach the site, you park the car. Trembling with excitement, you put on a wet suit and aqualung and dive below the surface of the cenote.", "To your horror, the entrance to the cave has been blocked. It looks like there is barely enough room for you to get in. But if you were to go for help, others will know about your discovery."
          ],
          image: <#T##String?#>,
          edges: [112,113]),
     
     Node(id: 98,
-         paragraphs: [
-         
+         paragraphs: ["At police headquarters you repeat your story. The police keep firing questions at you.", "\"How did you get here?\"", "\"Why did you come here?\"", "\"Tell us the truth.\"", "Finally they give up the questioning. Everyone is exhausted. The captain now turns to you, stubs out his evil-smelling cigarette in the full ashtray, looks you in the eye and says, \"Okay.\" He pauses. \"Are you brave? Will you agree to become a double agent? Join the revolutionary gang. Pretend to be one of them. We need information. You can help us stop this revolt.\"", "\"But how can I do it? They'll find out that I'm working for you and they'll kill me.\"", "\"That is the risk you take, but what can I say? The one named Tom agreed to help.\"", "\"Where would I start if I agree to be a double agent?\"", "The captain points to a map on the wall. \"See, there is the island of Cancun. It's a hotbed of revolutionaries. You would go there. Or you could go to Merida. That is the headquarters of the gang. We think your friend Tom went there. But no one knows.\""
          ],
          image: <#T##String?#>,
          edges: [114,115]),
     
     Node(id: 99,
-         paragraphs: [
-         
+         paragraphs: ["You start to run but soon you are surrounded by angry policemen. Manuel comes up to you and whispers in your ear. \"If you take this time potion now, you'll get out of this mess. Here.\"", "He hands you a small bottle and you drink it. The police are amazed because one moment you are there and the next you are gone.", "\"What happened? Wh-wh-where did the prisoner go?\" It's too late. You are back in the past. They will never find you.", "But how will you ever return to the present?", "The End"
          ],
          image: <#T##String?#>,
          edges: [132]),
     
     Node(id: 100,
-         paragraphs: [
-         
-         ],
-         image: <#T##String?#>,
-         edges: [101]),
-    
-    Node(id: 101,
-         paragraphs: [
-         
+         paragraphs: ["Tulum is a spot of terrifying beauty on a cliff above the smashing surf. You reach this ceremonial center with mysterious ease, but once there, terror overwhelms you. Plague has broken out."   
          ],
          image: <#T##String?#>,
          edges: [118,119]),
     
     Node(id: 102,
-         paragraphs: [
-         
+         paragraphs: ["The captain decides to head back for home port. You come about and run with the wind for the island of Cozumel, but just then, a squall hits and cracks the mast. The boat founders; the rudder is useless.", "Helpless, you watch as wave after wave batters the boat. Finally, a wave four times the size of the others sweeps over the frail craft. With a wrenching crash, the boat breaks up.", "You hold onto a piece of mast. It serves as a float, and after four hours you are washed ashore. You are the lone survivor. Enough of the sailor's life for you. Gasping for breath, you call out to Manuel and ask him to bring you back to the present.", "\"What is it, my friend?\"", "\"I want out. I've had enough." "Your wish is granted.\"", "Suddenly you are back in Merida. Was it all a dream? When you look in your brown notebook, it is full of writing.", "You have not found Tom. But you have enough wild tales to write a book of fiction.", "The End"
          ],
          image: <#T##String?#>,
          edges: [103]),
