@@ -120,7 +120,6 @@ let nodes = [
          edges: [
             Edge(destinationId: 132, prompt: "Turn to the next page")
          ]),
-
 14 : Node (id: 14,
          paragraphs: ["You stare at the priests in front of you. Two of them glare at you. One of them fingers his knife, and suddenly you are frightened.", "The head priest looks stern and says, \"Be calm, we will not hurt you. Look in the heavens. There is Venus."
          ],
@@ -354,7 +353,6 @@ let nodes = [
     
 43 : Node (id: 43,
          paragraphs: ["\"Who are your enemies?\" you ask.", "\"Toltecs, a savage group who worship Smoking Mirror, their god of war and death. They are always invading us.\" Several warriors nod in agreement.", "The officer in command says, \"It's up to you. You can go on raids or stay here in defense.\""
-         ],
          image: <#T##String?#>,
          edges: [
             Edge(destinationId: 48,
@@ -488,6 +486,8 @@ let nodes = [
          edges: [
             Edge(destinationId: 38,
                  prompt: "If you woud like to try investigating in Chichen Itza, turn to page 38.")
+            
+            Edge(destinationId: 132, prompt: "")
          ]),
     
 58 : Node (id: 58,
@@ -500,6 +500,7 @@ let nodes = [
     
 59 : Node (id: 59,
          paragraphs: ["time and place. You yell for Xha, but he's nowhere to be found. You don't know where to go or where to turn. You are lost!", "Then you hear sounds of people talking. None of them are Xha. They might be friends or they might be a band of enemy raiders. You hide behind some bushes and wait and watch."
+
          ],
          image: <#T##String?#>,
          edges: [
@@ -833,7 +834,6 @@ let nodes = [
             Edge(destinationId: 132, prompt: "")
          ]),
     
-
 100 : Node (id: 100,
          paragraphs: ["Tulum is a spot of terrifying beauty on a cliff above the smashing surf. You reach this ceremonial center with mysterious ease, but once there, terror overwhelms you. Plague has broken out."
          ],
@@ -906,7 +906,6 @@ let nodes = [
          edges: [
             Edge(destinationId: 132, prompt: "")
          ]),
-
     
 106 : Node (id: 106,
          paragraphs: [
@@ -937,7 +936,6 @@ let nodes = [
          edges: [
             Edge(destinationId: 132, prompt: "")
          ]),
-
     
 108 : Node (id: 108,
          paragraphs: [
@@ -970,10 +968,11 @@ let nodes = [
             "Your trip is over for now. Still no sign of Tom!",
 
             "The End"
-
          ],
          image: <#T##String?#>,
-         edges: [Edge(132)]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
 110 : Node (id: 110,
          paragraphs: [
@@ -989,7 +988,16 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [39,122,131]),
+         edges: [
+            Edge(destinationId: 39,
+                 prompt: "If you draw a yellow straw, turn to page 39."),
+            
+            Edge(destinationId: 122,
+                 prompt: "If you draw a blue straw, turn to page 122."),
+            
+            Edge(destinationId: 131,
+                 prompt: "If you draw a red straw, turn to page 131.")
+         ]),
     
 111 : Node (id: 111,
          paragraphs: [
@@ -1001,7 +1009,13 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [13,21]),
+         edges: [
+            Edge(destinationId: 13,
+                 prompt: "If you see this as an opportunity to escape the Toltecs, turn to page 13."),
+            
+            Edge(destinationId: 21,
+                 prompt: "If you accept this royal privilege, turn to page 21.")
+         ]),
     
 112 : Node (id: 112,
          paragraphs: [
@@ -1017,7 +1031,9 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(132)]),
+         Edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
 113 : Node (id: 113,
          paragraphs: [
@@ -1033,7 +1049,9 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(132)]),
+         Edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
 114 : Node (id: 114,
          paragraphs: [
@@ -1045,7 +1063,13 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [120,121]),
+         edges: [
+            Edge(destinationId: 120,
+                 prompt: "If you believe them and decide to fight for their cause, turn to page 120."),
+            
+            Edge(destinationId: 121,
+                 prompt: "If you don't believe them and decide to spy on them, turn to page 121.")
+         ]),
     
 115 : Node (id: 115,
          paragraphs: [
@@ -1057,7 +1081,9 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(132)]),
+         Edges: [
+             Edge(destinationId: 132, prompt: "")
+         ]),
     
 116 : Node (id: 116,
          paragraphs: [
@@ -1067,7 +1093,13 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [123,126]),
+         edges: [
+            Edge(destinationId: 123,
+                 prompt: "If you return to Chichen Itza, turn to page 123."),
+            
+            Edge(destinationId: 126,
+                 prompt: "If you go to Isla Mujeres, turn to page 126.")
+         ]),
     
 117 : Node (id: 117,
          paragraphs: [
@@ -1079,7 +1111,13 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [127,128]),
+         edges: [
+            Edge(destinationId: 127,
+                 prompt: "If you fight the potion wearing off, turn to page 127."),
+            
+            Edge(destinationId: 128,
+                 prompt: "If you let things take their course, turn to page 128.")
+         ]),
     
 118 : Node (id: 118,
          paragraphs: [
@@ -1097,7 +1135,7 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(destinationId: 132, prompt: <#String#>)]),
+         edges: [Edge(destinationId: 132, prompt: "")]),
     
 119 : Node (id: 119,
          paragraphs: [
@@ -1109,7 +1147,13 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [129,130]),
+         edges: [
+            Edge(destinationId: 129,
+                 prompt: "If you obey the priests and leave quietly, turn to page 129."),
+            
+            Edge(destinationId: 130,
+                 prompt: "If you ignore their threats, turn to page 130.")
+         ]),
     
 120 : Node (id: 120,
          paragraphs: [
@@ -1121,7 +1165,9 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(132)]),
+        edges: [
+            Edge(destinationId: 132, prompt: "")
+        ]),
     
 121 : Node (id: 121,
          paragraphs: [
@@ -1141,7 +1187,7 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(destinationId: 132, prompt: <#String#>)]),
+         edges: [Edge(destinationId: 132, prompt: "")]),
     
 122 : Node (id: 122,
          paragraphs: [
@@ -1153,7 +1199,7 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(destinationId: 132, prompt: <#String#>)]),
+         edges: [Edge(destinationId: 132, prompt: "")]),
     
 123 : Node (id: 123,
          paragraphs: [
@@ -1167,7 +1213,9 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [124]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
 124 : Node (id: 124,
          paragraphs: [
@@ -1182,7 +1230,9 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(destinationId: 132, prompt: <#String#>)]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+         ]),
     
 126 : Node (id: 126,
          paragraphs: [
@@ -1191,7 +1241,9 @@ let nodes = [
          "The End"
          ],
          image: <#T##String?#>,
-         edges: [Edge(destinationId: 132, prompt: <#String#>)]),
+         edges: [
+            Edge(destinationId: 132, prompt: "")
+        ]),
     
 127 : Node (id: 127,
          paragraphs: [
@@ -1205,7 +1257,7 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(destinationId: 132, prompt: <#String#>)]),
+         edges: [Edge(destinationId: 132, prompt: "")]),
     
 128 : Node (id: 128,
          paragraphs: [
@@ -1217,7 +1269,7 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(destinationId: 132, prompt: <#String#>)]),
+         edges: [Edge(destinationId: 132, prompt: "")]),
     
 129 : Node (id: 129,
          paragraphs: [
@@ -1231,7 +1283,7 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(destinationId: 132, prompt: <#String#>)]),
+         edges: [Edge(destinationId: 132, prompt: "")]),
     
 130 : Node (id: 130,
          paragraphs: [
@@ -1255,7 +1307,7 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(destinationId: 132, prompt: <#String#>)]),
+         edges: [Edge(destinationId: 132, prompt: "")]),
     
 131 : Node (id: 131,
          paragraphs: [
@@ -1271,5 +1323,5 @@ let nodes = [
 
          ],
          image: <#T##String?#>,
-         edges: [Edge(destinationId: 132, prompt: <#String#>)]),
+         edges: [Edge(destinationId: 132, prompt: "")]),
 ]
