@@ -14,10 +14,20 @@ struct Node: Identifiable {
     let edges: [Edge]           // A list of nodes this node is connected to
 }
 
-struct Edge {
+struct Edge: Hashable {
     let destinationId: Int
     let prompt: String
 }
+
+//An empty Node
+let emptyNode = Node(id: 0, paragraphs: [], image:nil,  edges: [])
+
+let testNode = Node(id: 1,
+                    paragraphs: ["It is night. You are standing on the flat top of a stone pyramid. Men dressed in long green robes crowd around you. They chant and sing in a language you don't understand.", "You look into the misty light for your friend Tom. Suddenly, you see him-struggling for his life. He is strapped to an altar, his arms and legs tied down. Tom's terrified eyes meet yours and you see him mouth the words, \"Help me. Please!\"", "A man in robes steps forward and begins to slide a knife across Tom's throat.", "\"Nooooo!\" you scream, reaching out."],
+                    image: "pg-1",
+                    edges: [Edge(destinationId: 2, prompt: "Turn to next page")
+                           ])
+
 
 let nodes = [
     
