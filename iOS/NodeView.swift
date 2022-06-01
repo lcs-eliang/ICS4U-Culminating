@@ -62,8 +62,8 @@ struct NodeView: View {
     }
 
 
-//struct NodeView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NodeView()
-//    }
-//}
+struct NodeView_Previews: PreviewProvider {
+    static var previews: some View {
+        NodeView(node: testNode, activeNode: Binding.constant(4))
+    }
+}
