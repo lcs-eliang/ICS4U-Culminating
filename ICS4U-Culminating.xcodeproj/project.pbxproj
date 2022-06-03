@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		259D9077284A3C79001BD09C /* Classify Ending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D9076284A3C79001BD09C /* Classify Ending.swift */; };
+		259D9078284A86A1001BD09C /* Classify Ending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259D9076284A3C79001BD09C /* Classify Ending.swift */; };
 		99945A67283E6B9200C1B621 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99945A66283E6B9200C1B621 /* main.swift */; };
 		C829BC8B2847AB040063355F /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C829BC8A2847AB040063355F /* iOSApp.swift */; };
 		C829BC8D2847AB040063355F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C829BC8C2847AB040063355F /* ContentView.swift */; };
@@ -244,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259D9078284A86A1001BD09C /* Classify Ending.swift in Sources */,
 				C829BC8D2847AB040063355F /* ContentView.swift in Sources */,
 				C829BC8B2847AB040063355F /* iOSApp.swift in Sources */,
 				C829BC972847AEF80063355F /* NodeView.swift in Sources */,
@@ -397,7 +399,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "iOS/Preview\\ Content";
 				DEVELOPMENT_TEAM = 89CY642UG3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -429,7 +431,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "iOS/Preview\\ Content";
 				DEVELOPMENT_TEAM = 89CY642UG3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
