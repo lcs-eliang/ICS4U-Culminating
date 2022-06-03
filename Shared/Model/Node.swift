@@ -133,7 +133,7 @@ let nodes = [
 14 : Node (id: 14,
          paragraphs: ["You stare at the priests in front of you. Two of them glare at you. One of them fingers his knife, and suddenly you are frightened.", "The head priest looks stern and says, \"Be calm, we will not hurt you. Look in the heavens. There is Venus."
          ],
-         image: nil,
+         image: "pg-14",
          edges: [
             Edge(destinationId: 15, prompt: "Turn to the next page")
          ]),
@@ -171,7 +171,7 @@ let nodes = [
 18 : Node (id: 18,
          paragraphs: ["At dawn, an old man comes and sits before you. With a start, you recognize Dr. Lopez. He speaks.", "\"My friend, you see part of the reason for the collapse of the Maya: evil priests, fear, human sacrifices gone out of control, death.\"", "\"But what now, Dr. Lopez?\"", "\"You can stay on in Kabah and live and work as a farmer until it is safe. Or you can go to Cozumel, an island off the coast. The journey to the island will be dangerous, but once you are there, the priests will not find you. Here at Kabah you are fairly safe as long as you do as we say. Zama will help you here.\"", "\"But where is Tom?\" you ask.", "\"We cannot tell you ... now,\" is the reply."
          ],
-         image: nil,
+         image: "pg-18",
          edges: [
             Edge(destinationId: 19,
                  prompt: "If you decide to stay in Kabah, go on to the next page."),
@@ -211,7 +211,7 @@ let nodes = [
 22 : Node (id: 22,
          paragraphs: ["As he walks away, Manuel turns to you and motions with a small rod. A beam of light shoots goose out of it. Suddenly you are so frightened that the hair on the back of your neck stands up and bumps appear on your arms. The beam of light is like an eraser and it wipes your mind clear of all memory of the day. Your last image is of a smiling Tom aboard the star cruiser.", "Suddenly the spacecraft is gone and you are standing at the foot of El Castillo. You can't remember anything that happened after your breakfast with Manuel. It is quiet in the great courtyard. Your big chance has come and You blew it. gone.", "The End"
          ],
-         image: nil,
+         image: "pg-22",
          edges: [
             Edge(destinationId: 132, prompt: "")
          ]),
@@ -219,15 +219,16 @@ let nodes = [
 23 : Node (id: 23,
          paragraphs: ["Kabah is rich in history and tradition. The rain god Chac adorns the walls of the temples. The Plumed Serpent is carved on most of the buildings. A girl of eleven named Mimla and a boy of fifteen named Ordex become your friends and companions. Daily, you work the fields planted with maize, squash, and peppers.", "In the heat of the day, you gather under the shelter of thatched roofs and play Mayan games of chance and skill called Mara Coo. The old people tell stories and recite poems about glorious leaders, bloody wars, and fierce or loving gods. You are careful to watch for the dreaded, but honored rattlesnakes, for they lurk in the dry bush ready to kill.", "You grow restless and feel guilty that you are not searching for Tom.", "\"I must leave,\" you announce to your new friends and Dr. Lopez.", "\"If you stay, you could have a brilliant future as a member of our group. Soon we will overthrow the priests. You are a natural leader.\"", "\"But my friend Tom, I must find him,\" you state as firmly as possible.", "\"As you wish,\" is the simple answer."
          ],
-         image: nil,
+         image: "pg-23",
          edges: [
             Edge(destinationId: 24, prompt: "Turn to the next page")
          ]),
-    
+
+// needs to compare with the book
 24 : Node (id: 24,
          paragraphs: ["\"This must be a dream world,\" you say to yourself as you make the decision. \"I will only find Tom in the real world... wherever that is.\"", "ZAP!", "Suddenly, you are standing in the same spot, but you notice a huge change. The earth has become hard from overuse. Plants can't grow. The fields are sun-scorched and brown.", "The few people standing nearby stare at you. They are thin and their eyes are empty looking. No one smiles. No one greets you. There is no noise, only the sound of wind blowing in the dry bushes around the abandoned huts. There are only a few children and they, too, are quiet and unhappy. It is a sad sight."
          ],
-         image: nil,
+         image: "pg-25",
          edges: [
             Edge(destinationId: 26, prompt: "Turn to the next page")
          ]),
@@ -255,7 +256,7 @@ let nodes = [
 28 : Node (id: 28,
          paragraphs: ["The flute calls to you; it has a magical hold on you. Perhaps it is a siren song, coming from ancient times, used as a means of putting people into spells and trances?", "Two people approach you from the edge of the jungle. Wow! It's Manuel and a friend.", "\"You see, the rains stopped. No crops grew. The people believed that Chac, the rain god, grew angry with them.\"", "\"What happened then? From the looks of the jungle, the rains must have come back.\""
          ],
-         image: nil,
+         image: "pg-28-29",
          edges: [
             Edge(destinationId: 29, prompt: "Turn to the next page")
          ]),
@@ -271,7 +272,9 @@ let nodes = [
             Edge(destinationId: 38,
                  prompt: "If you would like to start your investigation over again, turn to page 38.")
          ]),
-    
+
+// "pg-30" and and "pg-30 2" need to somehow fit in here
+
 31 : Node (id: 31,
          paragraphs: ["Both Dr. Lopez and Zama tell you of the clear water and the white beaches, and your mind is made up. Perhaps Tom followed the same escape route you did, and he is waiting for you on the beach. Either way, you've got to get away from the priests with blood in their hair. For ten days you struggle through the jungle with Zama. Thorns and dry branches tear your clothes and skin. Poisonous snakes are a constant danger, the sounds of their rattles the only warning of their deadly presence. But snakes are nothing compared to the occasional glimpses of jaguars! Finally, the jungle brush thins and the path you are on enters sparse grasslands. The smell of the ocean fills the air.", "You stand on the shore, feet in the water, letting the sand run through your toes. At a small fishing village, you board a boat headed for Cozumel.", "A sudden squall hits. Great waves smash against the small boat. It fills with water and begins to sink. Salt water fills your mouth, and a strange thing happens. The salt water washes away the effects of the magic potion.", "You find yourself in the present again. You have forgotten all about your visit to Dr. Lopez and your trip to the past. You do remember that finding Tom is your mission."
          ],
@@ -291,11 +294,13 @@ let nodes = [
             Edge(destinationId: 86,
                  prompt: "If you believe the people who say that the story is nonsense, turn to page 86.")
          ]),
-    
+
+// "pg-33"
+
 34 : Node (id: 34,
          paragraphs: ["The crowd parts further as you and Manuel walk after the priests and priestess. You begin to climb the steep stone steps. When you reach a ledge, the priestess watches you closely as the five priests form a tight square around you. Their long black hair is covered with a sticky evil-smelling substance. You ask Manuel what it is."
          ],
-         image: nil,
+         image: "pg-34",
          edges: [
             Edge(destinationId: 35, prompt: "Turn to the next page")
          ]),
@@ -315,7 +320,7 @@ let nodes = [
 37 : Node (id: 37,
          paragraphs: ["You try to continue on course. But gale-force winds and huge waves force your ship in an easterly direction. It is all you can do to keep the ship from swamping. One sailor is swept overboard, his screams lost in the roar of the waves.", "\"Captain, can't you do anything?\" you scream out.", "He does not answer. The wind and sea take all his attention.", "For a whole day your boat is tossed about by the storm. Then, once again, the wind picks up in force. You are propelled through the seas as if your boat had a motor, instead of sails.", "\"Land! Land straight ahead,\" the look-out shouts. Then you all see it. Palm trees, white beaches, and high mountains. You have reached what someday will be called Cuba. The boat slams through the surf and grates to rest on the beach. You are met by a group of tall and bronze Arawak people with broad smiling faces. They are friendly and offer rest and food. They invite you to stay with them."
          ],
-         image: nil,
+         image: "pg-37",
          edges: [
             Edge(destinationId: 116,
                  prompt: "If you choose to stay in Cuba, turn to page 116."),
@@ -343,11 +348,11 @@ let nodes = [
          edges: [
             Edge(destinationId: 132, prompt: "")
          ]),
-    
+
 40 : Node (id: 40,
          paragraphs: ["Manuel tells you these warriors have come from Chichen Itza. He introduces you to the officer in charge. On your way back to Chichen Itza, the officer speaks to you.", "\"There are two groups here. One group raids our enemies to get slaves or take revenge. The slaves are used for sacrifice. The soldiers in that unit are fast, quiet in the jungle, and ready to die if captured.\"", "\"The other group defends us against invaders. They are careful and watchful. They never give up. They will fight until the last one is dead.\""
          ],
-         image: nil,
+         image: "pg-40-41",
          edges: [
             Edge(destinationId: 43, prompt: "Turn to the next page")
          ]),
@@ -375,7 +380,7 @@ let nodes = [
 44 : Node (id: 44,
          paragraphs: ["You've got a hunch that Tom might have gone to Uxmal. You go with Manuel to the bus station for the trip there. The trip is long and hot, but finally you arrive at the ruins of the city. The Temple of the Magicians looms over the land. Steep stone steps ascend to a smaller temple building on top of the pyramid. Across from the Temple of the Magicians is a large, rectangular building which the Spanish Conquistadors called the Nunnery. No one really knows what it was used for."
          ],
-         image: nil,
+         image: "pg-44-45",
          edges: [
             Edge(destinationId: 45, prompt: "Turn to the next page")
          ]),
@@ -415,7 +420,7 @@ let nodes = [
 48 : Node (id: 48,
          paragraphs: ["You want to see action, but are you prepared to fight? It's one thing to travel in time; it's quite something else to be a warrior involved in real fighting. You could never kill anybody. And what if you have to defend yourself? Still, you decide to join the raids.", "After three weeks of training, the warrior chief says, \"Okay, now it is time. You will go on a raid to Ixtal, three days from here.\""
          ],
-         image: nil,
+         image: "pg-48",
          edges: [
             Edge(destinationId: 67,
                  prompt: "If you join in the fighting, turn to page 67."),
@@ -439,7 +444,7 @@ let nodes = [
 50 : Node (id: 50,
          paragraphs: ["The words \"Temple of the Magicians\" excite you. You walk toward the huge pyramid, but a crowd of tourists is busy snapping cameras and pushing and shoving. They surround the base.", "You stand for a moment waiting for the crowd to clear, when an old man with wrinkled skin wearing the colorful shawl of the Maya shuffles up to you.", "\"Come with me,\" he says, beckoning with a hand crippled with age. \"I will take you to see a very deep water hole, a secret cenote. Water is scarce in this dry land and the cenotes are the most important reasons for choosing a place to live. Without water, there is no chance to live. You will be amazed at what I will show you at this cenote.\"", "You look around, but Manuel is nowhere to be seen. Where has he gone?"
          ],
-         image: nil,
+         image: "pg-50",
          edges: [
             Edge(destinationId: 71,
                  prompt: "If you decide to go with the old man, turn to page 71."),
@@ -451,7 +456,7 @@ let nodes = [
 52 : Node (id: 52,
          paragraphs: ["The building called the Nunnery is intricately designed with carvings of birds, snakes, and humanlike creatures. There are few clues as to what the building was used for. The rooms are too dark to have been used for living quarters.", "Poking around in a dark room with a flashlight, you see a piece of white paper stuck to the far wall. It says:", "Hotel Maya, Chichen Itza, Room 927 Thursday night You must come. There is danger."
          ],
-         image: nil,
+         image: "pg-52-53",
          edges: [
             Edge(destinationId: 53, prompt: "Turn to the next page")
          ]),
@@ -471,7 +476,7 @@ let nodes = [
 54 : Node (id: 54,
          paragraphs: ["The priests wait impatiently as you ramble on about not wanting to kill anyone. Their eyes gleam and their bodies shake as though with fever.", "\"You must do it,\" one of them shouts at you. \"You must!\"", "\"But it isn't right. I can't kill. I won't kill.\"", "One of the priests lunges at you, but you duck to one side. He tumbles down the steps of the temple. The crowd of people standing below look up in horror. In the confusion, you sneak down the other side of the pyramid. Although the steps are extremely steep, you make it and manage to lose yourself in the crowd. You ask a man where the warriors can be found. He points to the courtyard. You decide to join them. Nothing can be more warlike than life with the priests. Perhaps the warriors will be more civilized."
          ],
-         image: nil,
+         image: "pg-54",
          edges: [
             Edge(destinationId: 40,
                  prompt: "Turn to page 40.")
@@ -503,7 +508,7 @@ let nodes = [
 58 : Node (id: 58,
          paragraphs: ["Tracking the jaguar isn't easy. The cat is sly and moves quietly through the bush. After stalking it, you understand why the Maya worship the jaguar. It is one of their important gods. You think it is because the cat seems to have supernatural powers. You try to guess what its next move will be. Whenever you think the cat is ahead of you, it suddenly appears behind you or off to the side. Maybe the jaguar is tracking you? You become so absorbed in the pursuit that you lose all track of"
          ],
-         image: nil,
+         image: "pg-58",
          edges: [
             Edge(destinationId: 59, prompt: "Turn to the next page")
          ]),
@@ -541,7 +546,7 @@ let nodes = [
 62 : Node (id: 62,
          paragraphs: ["One by one, the group standing at the pyramid enters the spacecraft by the transporter beam. You notice that halfway to the spacecraft, their bodies begin to glow. No one seems to be afraid.", "Gaining confidence, you step into the transporter beam and are carried up into the spacecraft. You hear nothing as you shoot up and away into the far reaches of the universe, to the planet Merganatic and the great Congress on Intergalactic Life. You wonder why the Mayan sites were chosen as contact points. Their brutal and complex society seems an odd choice for other planets. Who knows what lies ahead?", "The End"
          ],
-         image: nil,
+           image: "pg-62",
          edges: [
             Edge(destinationId: 132, prompt: "")
          ]),
@@ -565,7 +570,7 @@ let nodes = [
 66 : Node (id: 66,
          paragraphs: ["\"No more talk. Act. Take the knife. Bring the sacrifice to Chac.\" The priestess points to the altar.", "A slave holding a chicken climbs the temple steps. Behind him, two soldiers lead a prisoner kicking and screaming. Looking into the prisoner's eyes, you see the fear of death and the pleading to be saved.", "What can you do?"
          ],
-         image: nil,
+         image: "pg-66",
          edges: [
             Edge(destinationId: 54,
                  prompt: "If you stall for time, turn to page 54."),
@@ -586,7 +591,7 @@ let nodes = [
 68 : Node (id: 68,
          paragraphs: ["You watch the fighting from behind a bush. Off to the right you see three of the enemy pulling on a large hemp rope. It releases a bent tree. The tree has a bucket filled with rocks that shower down on you.", "\"Watch out!\" you scream. \"Duck!\"", "Two of your warriors are knocked out. A flurry of arrows and spears fills the air. Three more of your warriors are wounded. Shouts and screams pierce the air.", "\"Escape!\" your captain yells.", "The attack is a complete failure. The enemy had more strength and courage than you ever imagined.", "When you try to retreat, you become confused. Where do you go? You are cut off from the other warriors."
          ],
-         image: nil,
+         image: "pg-68",
          edges: [
             Edge(destinationId: 56,
                  prompt: "If you follow a path that leads from the clearing, turn to page 56."),
@@ -618,7 +623,7 @@ let nodes = [
 72 : Node (id: 72,
          paragraphs: ["Before you know it, you are on the field in the ball court. Shouting fills the air as the two teams practice. A large crowd gathers to watch.", "Six priests, three elders, and a group dressed in clothes of golden cloth march in, take their honored places, and signal for the game to begin.", "What if you lose? Your eyes quickly travel to the steps of the pyramid called El Castillo. You have heard of victims having their hearts ripped out and then being thrown down the steps into the courtyard.", "The game is long and hard. The score is close. Your heart pounds. With loud screams and yells, a raiding party bursts into the ball court. They are Toltecs, a tribe of fierce warriors from the north"
          ],
-         image: nil,
+         image: "pg-72",
          edges: [
             Edge(destinationId: 73, prompt: "Turn to the next page")
          ]),
@@ -634,7 +639,7 @@ let nodes = [
 75 : Node (id: 75,
          paragraphs: ["Who put the note in the darkened room? Who could have known you would be there and would find it? It might well be the secret forces of the Maya at work-forces too hidden for most humans to understand. You are fascinated.", "You check into the Hotel Maya. At nine o'clock when you walk down the corridor to Room 327, soldiers leap out of Rooms 328 and 329 and arrest you. They are all heavily armed. You can smell the oil on the weapons. Their captain speaks to you in Spanish, but then switches to English when you don't reply.", "\"So, you are the spy we have been waiting for. We knew we would catch you. If you are wondering what happened to your friend in Room 327, I'll tell you. He was captured two days ago, and is now in jail. You revolutionaries are all the same.\"", "The captain orders the soldiers to take you away under arrest."
          ],
-         image: nil,
+         image: "pg-75",
          edges: [
             Edge(destinationId: 83,
                  prompt: "If you plead innocence, turn to page 83."),
@@ -646,7 +651,7 @@ let nodes = [
 76 : Node (id: 76,
          paragraphs: ["You ignore the old man. Who knows what he is after?", "As you walk away from him, a rock with a piece of paper wrapped around it drops at your feet. You look up, startled, but you see no one who could have dropped this rock.", "The paper contains a short message that says:", "RETURN TO THE NUNNERY. MEET WITH US IN THE SEVENTH ROOM", "The message is signed with a red handprint. What should you do?", "Manuel is walking back toward you. You rush over and show him the note. Manuel looks at the note and shakes his head.", "\"Leave it alone. It could be dangerous.\""
          ],
-         image: nil,
+         image: "pg-76",
          edges: [
             Edge(destinationId: 78,
                  prompt: "If you decide to ignore the instructions in the note and go instead to the Mexican police, turn to page 78."),
@@ -666,7 +671,7 @@ let nodes = [
 78 : Node (id: 78,
          paragraphs: ["You see two policemen near the tourist buses. \"We're sorry but we can't help you. We are too busy. We are trying to find one of your countrymen who vanished several weeks ago.\"", "You show them the note. When they see the sign of the red hand, they become very excited.", "\"Wait! Just one minute. Don't leave. Stay right there.\" They talk in hushed tones, and then they radio their headquarters.", "\"The captain is coming right away.\"", "Soon you hear the whirring of a helicopter. When it lands in the courtyard, three men get out.", "\"Let me see the note.\" It is the captain speaking. He is a heavy man with a black mustache.", "\"Aha! I see. The red hand. This is the mark of the revolutionaries. How did you come by this note? Do you know the American named Tom?\""
          ],
-         image: nil,
+         image: "pg-78",
          edges: [
             Edge(destinationId: 98,
                  prompt: "If you cooperate with the police, turn to page 98."),
@@ -691,7 +696,7 @@ let nodes = [
 81 : Node (id: 81,
          paragraphs: ["The red handprint is ominous. What can it mean? You enter the seventh room in the Nunnery building. Although it is dark inside, you see a face. It is luminous, and glows with a soft, yellowish light. A person clothed in silver with golden armbands stands in the middle of the room.", "\"You and three others have been chosen to journey to far space. Uxmal is our earth base. Join is if you have the courage. The earth as we know it will no longer be safe.\"", "You listen in amazement to all that he says. It sounds like the prediction made by Mayan priests hundreds and hundreds of years ago. It is scary, because maybe they were right.", "Tom suddenly appears, and it is clear he has already been to space and back. \"Come with us,\" he tells you. \"It is time. time.\"", "You decide to go with them.", "The End"
          ],
-         image: nil,
+         image: "pg-81",
          edges: [
             Edge(destinationId: 132, prompt: "")
          ]),
@@ -699,7 +704,7 @@ let nodes = [
 83 : Node (id: 83,
          paragraphs: ["\"Captain, it's all a mistake. I was on my way to my own room. I just came to this room by accident. I am no revolutionary or spy. You must believe me.\"", "The captain laughs. \"They all say that. You are all the same. Spies, radicals, thieves. We have a way to deal with you!\"", "You are handcuffed, put into a jeep and driven to Merida. There, you are thrown into a small, damp, evil-smelling cell in the local jail. The captain comes to see you the next day to tell you that the judge has given you a thirty-year sentence for plotting to overthrow the government.", "\"But I've had no trial,\" you protest.", "\"We caught you red-handed, and we don't believe in trials anyway. These are dangerous times. You can call this the Revenge of the Maya. You have angered their ancient gods!\" he laughs.", "He stubs out a cigarette in the earthen floor, sticks his short, brown hands in his pockets, and walks away from your cell. You grab the bars of the cell and scream for help. Three guards at the end of the corridor just laugh. You will be in jail for a long time.", "The End"
          ],
-         image: nil,
+         image: "pg-83",
          edges: [
             Edge(destinationId: 132, prompt: "")
          ]),
@@ -751,7 +756,7 @@ let nodes = [
 88 : Node (id: 88,
            paragraphs: ["\"Manuel, help! I didn't bargain for this.\" Once again your mysterious friend appears. He holds out his clenched fists for you to make your choice. \"Choose the right hand or the left hand.", "What kind of choice is that, Manuel? That's just rolling dice.\"", "Manuel looks at you long and hard. His black eyes almost burn through you. \"The choices lie deep within you. Do not hesitate. Choose now.\""
          ],
-         image: nil,
+         image: "pg-88",
          edges: [
             Edge(destinationId: 108,
                  prompt: "If you point to the right hand, turn to page 108."),
@@ -771,11 +776,13 @@ let nodes = [
 90 : Node (id: 90,
          paragraphs: ["You lie on the ground feeling dizzy and sick to your stomach. The Earth spins around and the colors you see are a blur. You grip a rock in your right hand, trying to hold on. Then you faint.", "When you awaken you are cold, hungry, stiff, and alone. The call of an owl echoes in the jungle. Sounds of twigs snapping and dry leaves rustling seem louder than they would if you weren't frightened.", "Two people appear, creeping from hiding places between first one, then another, tree. You hold your breath and don't move a muscle. They are coming toward you. You can almost feel one of their spears pushing into your back."
          ],
-         image: nil,
+         image: "pg-90",
          edges: [
             Edge(destinationId: 94, prompt: "Turn to page 94.")
          ]),
-    
+
+// "pg-92-93"
+
 93 : Node (id: 93,
          paragraphs: ["You don't know who these people are or where they have come from, but talking to them is worth the risk. You couldn't survive long in this desolate area alone without food and water. You sneak toward them through the jungle, fearful of making even the slightest noise. The talking grows louder.", "Peering around a clump of bushes, you see a group seated around a small fire. They are eating. The food smells good and you are very hungry. You step out from behind the tree. Before you have a chance to say anything, two men jump to their feet. Several grab their short spears. They surround you.", "\"Hey, I'm friendly. I'm not an enemy. I'm lost.\" The leader shouts commands."
          ],
@@ -847,7 +854,7 @@ let nodes = [
 100 : Node (id: 100,
          paragraphs: ["Tulum is a spot of terrifying beauty on a cliff above the smashing surf. You reach this ceremonial center with mysterious ease, but once there, terror overwhelms you. Plague has broken out."
          ],
-         image: nil,
+         image: "pg-100-101",
          edges: [
             Edge(destinationId: 118,
                  prompt: "If you try to organize a medical team, turn to page 118."),
@@ -859,7 +866,7 @@ let nodes = [
 102 : Node (id: 102,
             paragraphs: ["The captain decides to head back for home port. You come about and run with the wind for the island of Cozumel, but just then, a squall hits and cracks the mast. The boat founders; the rudder is useless.", "Helpless, you watch as wave after wave batters the boat. Finally, a wave four times the size of the others sweeps over the frail craft. With a wrenching crash, the boat breaks up.", "You hold onto a piece of mast. It serves as a float, and after four hours you are washed ashore. You are the lone survivor. Enough of the sailor's life for you. Gasping for breath, you call out to Manuel and ask him to bring you back to the present.", "\"What is it, my friend?\"", "\"I want out. I've had enough.", "Your wish is granted.\"", "Suddenly you are back in Merida. Was it all a dream? When you look in your brown notebook, it is full of writing.", "You have not found Tom. But you have enough wild tales to write a book of fiction.", "The End"
          ],
-         image: nil,
+         image: "pg-102-103",
          edges: [
             Edge(destinationId: 103, prompt: "Turn to the next page.")
          ]),
@@ -912,7 +919,7 @@ let nodes = [
             "The End"
 
          ],
-         image: nil,
+         image: "pg-105",
          edges: [
             Edge(destinationId: 132, prompt: "")
          ]),
@@ -979,7 +986,7 @@ let nodes = [
 
             "The End"
          ],
-         image: nil,
+         image: "pg-109",
          edges: [
             Edge(destinationId: 132, prompt: "")
          ]),
@@ -1090,7 +1097,7 @@ let nodes = [
             "The End"
 
          ],
-         image: nil,
+         image: "pg-115",
          edges: [
              Edge(destinationId: 132, prompt: "")
          ]),
@@ -1239,7 +1246,7 @@ let nodes = [
 
 
          ],
-         image: nil,
+         image: "pg-124-125",
          edges: [
             Edge(destinationId: 132, prompt: "")
          ]),
