@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import ICS4U_Culminating
+//import ICS4U_Culminating
 
 struct NodeView: View {
    
@@ -25,37 +25,56 @@ struct NodeView: View {
                 
                 VStack(alignment: .leading) {
                     
-                    // Page number
-                    Text("\(node.id)")
-                        .padding()
-                    
-                    // Iterate over all the paragraphs
-                    ForEach(node.paragraphs, id: \.self) { currentParagraph in
-                        Text(currentParagraph)
-                            .padding()
-                    }
-                    
-                    // Show the image, if there is one
-                    Image(image)
-                        .resizable()
-                        .scaledToFit()
-                    
-                    // Show choices, when they exist
-                    ForEach(node.edges, id: \.self) { currentEdge in
-                        HStack {
-                            Spacer()
+                    // Ending page
+                    if node.id == 132 {
+                        
+                        Button("restart") {
                             
-                            Text(currentEdge.prompt)
-                                .padding()
-                                .multilineTextAlignment(.trailing)
-                                .onTapGesture {
-                                    if currentEdge.destinationId == 132 {
-                                        addEndingReached(currentNode: activeNode)
-                                    }
-                                    // Advance to whatever node this prompt is for
-                                    activeNode = currentEdge.destinationId
-                                }
+                            activeNode = 1
+                            
                         }
+                        
+                        // Could add a button to the statsview here
+                        
+                        
+                    } else {
+                        
+                        // A normal story page
+                        // Page number
+                        Text("\(node.id)")
+                            .padding()
+                        
+                        // Iterate over all the paragraphs
+                        ForEach(node.paragraphs, id: \.self) { currentParagraph in
+                            Text(currentParagraph)
+                                .padding()
+                        }
+                        
+                        // Show the image, if there is one
+                        Image(image)
+                            .resizable()
+                            .scaledToFit()
+                        
+                        // Show choices, when they exist
+                        ForEach(node.edges, id: \.self) { currentEdge in
+                            HStack {
+                                Spacer()
+                                
+                                Text(currentEdge.prompt)
+                                    .padding()
+                                    .multilineTextAlignment(.trailing)
+                                    .onTapGesture {
+                                        if currentEdge.destinationId == 132 {
+                                            
+                                            addEndingReached(currentNode: activeNode)
+                                            
+                                        }
+                                        // Advance to whatever node this prompt is for
+                                        activeNode = currentEdge.destinationId
+                                    }
+                            }
+                        }
+                        
                     }
                    
                 }
@@ -64,7 +83,6 @@ struct NodeView: View {
             
         }
     }
-
 
 struct NodeView_Previews: PreviewProvider {
     static var previews: some View {
