@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ICS4U_Culminating
 
 struct NodeView: View {
    
@@ -54,6 +55,9 @@ struct NodeView: View {
                                 .padding()
                                 .multilineTextAlignment(.trailing)
                                 .onTapGesture {
+                                    if currentEdge.destinationId == 132 {
+                                        addEndingReached(currentNode: activeNode)
+                                    }
                                     // Advance to whatever node this prompt is for
                                     activeNode = currentEdge.destinationId
                                 }
