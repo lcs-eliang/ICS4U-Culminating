@@ -27,17 +27,21 @@ struct NodeView: View {
                     // Page number
                     Text("\(node.id)")
                         .padding()
+                        .font(.custom("Georgia", size: 30, relativeTo: .largeTitle))
                     
                     // Iterate over all the paragraphs
                     ForEach(node.paragraphs, id: \.self) { currentParagraph in
                         Text(currentParagraph)
                             .padding()
+                            .font(.custom("Georgia", size: 20, relativeTo: .headline))
                     }
                     
                     // Show the image, if there is one
-                    Image(image)
-                        .resizable()
-                        .scaledToFit()
+                    if image != "" {
+                        Image(image)
+                            .resizable()
+                            .scaledToFit()
+                    }
                     
                     // Show choices, when they exist
                     ForEach(node.edges, id: \.self) { currentEdge in
@@ -45,6 +49,8 @@ struct NodeView: View {
                             Spacer()
                             
                             Text(currentEdge.prompt)
+                                .italic()
+                                .font(.custom("Georgia", size: 20, relativeTo: .headline))
                                 .padding()
                                 .multilineTextAlignment(.trailing)
                                 .onTapGesture {
