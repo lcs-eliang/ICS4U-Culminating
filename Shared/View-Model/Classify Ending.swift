@@ -8,7 +8,7 @@
 import Foundation
 
 //set containing the list of ending numbers reached
-var endingsReached: Set = [Int]
+var endingsReached = Set<Int>()
 
 //function that adds the current ending to the list of endings reached
 func addEndingReached (currentNode: Int) {

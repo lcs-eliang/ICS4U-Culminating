@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import ICS4U_Culminating
+//import ICS4U_Culminating
 
 struct NodeView: View {
    
@@ -14,54 +14,69 @@ struct NodeView: View {
         let node: Node
         @Binding var activeNode: Int
         
-        // MARK: Computed properties
-        var image: String {
-            return node.image ?? ""
-        }
-        
         var body: some View {
             
             ScrollView {
                 
                 VStack(alignment: .leading) {
                     
-                    // Page number
-                    Text("\(node.id)")
-                        .padding()
-                        .font(.custom("Georgia", size: 30, relativeTo: .largeTitle))
-                    
-                    // Iterate over all the paragraphs
-                    ForEach(node.paragraphs, id: \.self) { currentParagraph in
-                        Text(currentParagraph)
-                            .padding()
-                            .font(.custom("Georgia", size: 20, relativeTo: .headline))
-                    }
-                    
-                    // Show the image, if there is one
-                    if image != "" {
-                        Image(image)
-                            .resizable()
-                            .scaledToFit()
-                    }
-                    
-                    // Show choices, when they exist
-                    ForEach(node.edges, id: \.self) { currentEdge in
-                        HStack {
-                            Spacer()
+                    // Ending page
+                    if node.id == 132 {
+                        
+                        // Returns to the first page of the book
+                        Button("restart") {
                             
-                            Text(currentEdge.prompt)
-                                .italic()
-                                .font(.custom("Georgia", size: 20, relativeTo: .headline))
-                                .padding()
-                                .multilineTextAlignment(.trailing)
-                                .onTapGesture {
-                                    if currentEdge.destinationId == 132 {
-                                        addEndingReached(currentNode: activeNode)
-                                    }
-                                    // Advance to whatever node this prompt is for
-                                    activeNode = currentEdge.destinationId
-                                }
+                            activeNode = 1
+                            
                         }
+                        
+                        // Leads to the AchievementsView
+                        AchievementsView()
+                        
+                        
+                    } else {
+                        
+                        // A normal story page
+                        // Page number
+                        Text("\(node.id)")
+                            .padding()
+                        
+                        // Iterate over all the paragraphs
+                        ForEach(node.paragraphs, id: \.self) { currentParagraph in
+                            Text(currentParagraph)
+                                .padding()
+                        }
+                        
+                        // Show the image, if there is one
+                        
+                        if let image = node.image {
+                            
+                            Image(image)
+                                .resizable()
+                                .scaledToFit()
+
+                        }
+                        
+                        // Show choices, when they exist
+                        ForEach(node.edges, id: \.self) { currentEdge in
+                            HStack {
+                                Spacer()
+                                
+                                Text(currentEdge.prompt)
+                                    .padding()
+                                    .multilineTextAlignment(.trailing)
+                                    .onTapGesture {
+                                        if currentEdge.destinationId == 132 {
+                                            
+                                            addEndingReached(currentNode: activeNode)
+                                            
+                                        }
+                                        // Advance to whatever node this prompt is for
+                                        activeNode = currentEdge.destinationId
+                                    }
+                            }
+                        }
+                        
                     }
                    
                 }
@@ -70,7 +85,6 @@ struct NodeView: View {
             
         }
     }
-
 
 struct NodeView_Previews: PreviewProvider {
     static var previews: some View {

@@ -224,7 +224,6 @@ let nodes = [
             Edge(destinationId: 24, prompt: "Turn to the next page")
          ]),
 
-// needs to compare with the book
 24 : Node (id: 24,
          paragraphs: ["\"This must be a dream world,\" you say to yourself as you make the decision. \"I will only find Tom in the real world... wherever that is.\"", "ZAP!", "Suddenly, you are standing in the same spot, but you notice a huge change. The earth has become hard from overuse. Plants can't grow. The fields are sun-scorched and brown.", "The few people standing nearby stare at you. They are thin and their eyes are empty looking. No one smiles. No one greets you. There is no noise, only the sound of wind blowing in the dry bushes around the abandoned huts. There are only a few children and they, too, are quiet and unhappy. It is a sad sight."
          ],
@@ -273,12 +272,10 @@ let nodes = [
                  prompt: "If you would like to start your investigation over again, turn to page 38.")
          ]),
 
-// "pg-30" and and "pg-30 2" need to somehow fit in here
-
 31 : Node (id: 31,
          paragraphs: ["Both Dr. Lopez and Zama tell you of the clear water and the white beaches, and your mind is made up. Perhaps Tom followed the same escape route you did, and he is waiting for you on the beach. Either way, you've got to get away from the priests with blood in their hair. For ten days you struggle through the jungle with Zama. Thorns and dry branches tear your clothes and skin. Poisonous snakes are a constant danger, the sounds of their rattles the only warning of their deadly presence. But snakes are nothing compared to the occasional glimpses of jaguars! Finally, the jungle brush thins and the path you are on enters sparse grasslands. The smell of the ocean fills the air.", "You stand on the shore, feet in the water, letting the sand run through your toes. At a small fishing village, you board a boat headed for Cozumel.", "A sudden squall hits. Great waves smash against the small boat. It fills with water and begins to sink. Salt water fills your mouth, and a strange thing happens. The salt water washes away the effects of the magic potion.", "You find yourself in the present again. You have forgotten all about your visit to Dr. Lopez and your trip to the past. You do remember that finding Tom is your mission."
          ],
-         image: nil,
+         image: "pg-30", 
          edges: [
             Edge(destinationId: 38, prompt: "Turn to the next page")
          ]),
@@ -286,7 +283,7 @@ let nodes = [
 32 : Node (id: 32,
          paragraphs: ["You head for the coast on foot and arrive on the island of Cozumel after four days of travel by boat. Cozumel is a paradise. Coral reefs are filled with fish. Giant sea turtles swim near the northern end of the island, and birds fill the air at sunrise and sunset. It is hard to tell where the sea ends and the sky begins.", "The island is the home of Mayan traders who travel up and down the coast exchanging cloth, jade, fish, and pottery. Perhaps they have heard of your friend. You ask around. No one has heard of Tom or seen him, until one day, a trader arrives who has heard rumors of a strange young man with white skin. He is being held captive on Isla Mujeres, the trader tells you."
          ],
-         image: nil,
+         image: "pg-33",
          edges: [
             Edge(destinationId: 85,
                  prompt: "If you try to get to Isla Mujeres, turn to page 85."),
@@ -294,8 +291,6 @@ let nodes = [
             Edge(destinationId: 86,
                  prompt: "If you believe the people who say that the story is nonsense, turn to page 86.")
          ]),
-
-// "pg-33"
 
 34 : Node (id: 34,
          paragraphs: ["The crowd parts further as you and Manuel walk after the priests and priestess. You begin to climb the steep stone steps. When you reach a ledge, the priestess watches you closely as the five priests form a tight square around you. Their long black hair is covered with a sticky evil-smelling substance. You ask Manuel what it is."
@@ -781,12 +776,10 @@ let nodes = [
             Edge(destinationId: 94, prompt: "Turn to page 94.")
          ]),
 
-// "pg-92-93"
-
 93 : Node (id: 93,
          paragraphs: ["You don't know who these people are or where they have come from, but talking to them is worth the risk. You couldn't survive long in this desolate area alone without food and water. You sneak toward them through the jungle, fearful of making even the slightest noise. The talking grows louder.", "Peering around a clump of bushes, you see a group seated around a small fire. They are eating. The food smells good and you are very hungry. You step out from behind the tree. Before you have a chance to say anything, two men jump to their feet. Several grab their short spears. They surround you.", "\"Hey, I'm friendly. I'm not an enemy. I'm lost.\" The leader shouts commands."
          ],
-         image: nil,
+         image: "pg 92-93",
          edges: [
             Edge(destinationId: 95, prompt: "Turn to page 95.")
          ]),
