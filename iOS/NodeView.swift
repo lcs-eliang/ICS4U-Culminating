@@ -40,11 +40,13 @@ struct NodeView: View {
                         // Page number
                         Text("\(node.id)")
                             .padding()
+                            .font(.custom("Georgia", size: 30, relativeTo: .headline))
                         
                         // Iterate over all the paragraphs
                         ForEach(node.paragraphs, id: \.self) { currentParagraph in
                             Text(currentParagraph)
                                 .padding()
+                                .font(.custom("Georgia", size: 20, relativeTo: .headline))
                         }
                         
                         // Show the image, if there is one
@@ -63,7 +65,9 @@ struct NodeView: View {
                                 Spacer()
                                 
                                 Text(currentEdge.prompt)
+                                    .italic()
                                     .padding()
+                                    .font(.custom("Georgia", size: 20, relativeTo: .headline))
                                     .multilineTextAlignment(.trailing)
                                     .onTapGesture {
                                         if currentEdge.destinationId == 132 {
@@ -82,6 +86,10 @@ struct NodeView: View {
                 }
                 
             }
+            .background(
+                Image("Background")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all))
             
         }
     }

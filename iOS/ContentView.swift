@@ -37,7 +37,7 @@ struct ContentView: View {
         if gameIsOn == false {
             
             // Welcome screen
-            Text("Welcome!")
+            Text("Start Game")
                 .onTapGesture {
                     startGame()
                 }
