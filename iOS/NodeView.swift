@@ -14,11 +14,6 @@ struct NodeView: View {
         let node: Node
         @Binding var activeNode: Int
         
-        // MARK: Computed properties
-        var image: String {
-            return node.image ?? ""
-        }
-        
         var body: some View {
             
             ScrollView {
@@ -53,9 +48,14 @@ struct NodeView: View {
                         }
                         
                         // Show the image, if there is one
-                        Image(image)
-                            .resizable()
-                            .scaledToFit()
+                        
+                        if let image = node.image {
+                            
+                            Image(image)
+                                .resizable()
+                                .scaledToFit()
+
+                        }
                         
                         // Show choices, when they exist
                         ForEach(node.edges, id: \.self) { currentEdge in
