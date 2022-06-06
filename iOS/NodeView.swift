@@ -28,13 +28,15 @@ struct NodeView: View {
                     // Ending page
                     if node.id == 132 {
                         
+                        // Returns to the first page of the book
                         Button("restart") {
                             
                             activeNode = 1
                             
                         }
                         
-                        // Could add a button to the statsview here
+                        // Leads to the AchievementsView
+                        AchievementsView()
                         
                         
                     } else {
