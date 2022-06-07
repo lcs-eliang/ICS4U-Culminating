@@ -50,10 +50,15 @@ struct ContentView: View {
                 
                 Button ("Start game") {
                     animationAmount += 1
-                    startGame()
+//                    startGame()
                 }
                 .font(.custom("AmericanTypewriter", size: 30, relativeTo: .title))
-                
+                .scaleEffect(animationAmount)
+                .animation(
+                    .easeInOut(duration: 1)
+                        .repeatForever(autoreverses: true),
+                    value: animationAmount
+                )
 
                 
             }
