@@ -26,7 +26,7 @@ struct NodeView: View {
                 VStack(alignment: .leading) {
                     
                     // Ending page
-                    if node.id == 132 {
+                    if node.ending != nil {
                         
                         Button("restart") {
                             
