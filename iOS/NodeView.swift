@@ -14,6 +14,7 @@ struct NodeView: View {
     let node: Node
     @Binding var activeNode: Int
     @State private var reader: ScrollViewProxy?
+    @State private var showingStats = false
     
     var body: some View {
         
@@ -57,6 +58,11 @@ struct NodeView: View {
                         Button("View Stats") {
                             
                             addEndingReached(currentNode: activeNode)
+                            
+                            showingStats.toggle()
+                            
+                        }
+                        .sheet(isPresented: $showingStats) {
                             
                             AchievementsView()
                             
