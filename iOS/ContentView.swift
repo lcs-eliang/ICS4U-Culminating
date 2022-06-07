@@ -38,9 +38,10 @@ struct ContentView: View {
             VStack {
             // Welcome screen
             Text("Start Game")
-    
+                .font(.custom("Press Start 2P", size: 30, relativeTo: .title))
                 .onTapGesture {
                     startGame()
+
                 }
             Image("homescreen")
                     .resizable()

@@ -13,78 +13,96 @@ struct NodeView: View {
     // MARK: Stored properties
         let node: Node
         @Binding var activeNode: Int
+        @State private var reader: ScrollViewProxy?
         
         var body: some View {
             
             ScrollView {
                 
-                VStack(alignment: .leading) {
+                ScrollViewReader {
+                    scrollViewProxy in
                     
-                    // Ending page
-                    if node.id == 132 {
+                    Text("")
+                        .id("top-of-page")
+                        .tag("top-of-page")
+                    
+                    VStack(alignment: .leading) {
                         
-                        // Returns to the first page of the book
-                        Button("restart") {
+                        // Ending page
+                        if node.id == 132 {
                             
-                            activeNode = 1
-                            
-                        }
-                        
-                        // Leads to the AchievementsView
-                        AchievementsView()
-                        
-                        
-                    } else {
-                        
-                        // A normal story page
-                        // Page number
-                        Text("\(node.id)")
-                            .padding()
-                            .font(.custom("Georgia", size: 30, relativeTo: .headline))
-                        
-                        // Iterate over all the paragraphs
-                        ForEach(node.paragraphs, id: \.self) { currentParagraph in
-                            Text(currentParagraph)
-                                .padding()
-                                .font(.custom("Georgia", size: 20, relativeTo: .headline))
-                        }
-                        
-                        // Show the image, if there is one
-                        
-                        if let image = node.image {
-                            
-                            Image(image)
-                                .resizable()
-                                .scaledToFit()
-
-                        }
-                        
-                        // Show choices, when they exist
-                        ForEach(node.edges, id: \.self) { currentEdge in
-                            HStack {
-                                Spacer()
+                            // Returns to the first page of the book
+                            Button("restart") {
                                 
-                                Text(currentEdge.prompt)
-                                    .italic()
+                                activeNode = 1
+                                
+                            }
+                            
+                            // Leads to the AchievementsView
+                            AchievementsView()
+                            
+                            
+                        } else {
+                            
+                            // A normal story page
+                            // Page number
+                            Text("\(node.id)")
+                                .padding()
+                                .font(.custom("Georgia", size: 30, relativeTo: .headline))
+                            
+                            // Iterate over all the paragraphs
+                            ForEach(node.paragraphs, id: \.self) { currentParagraph in
+                                Text(currentParagraph)
                                     .padding()
                                     .font(.custom("Georgia", size: 20, relativeTo: .headline))
-                                    .multilineTextAlignment(.trailing)
-                                    .onTapGesture {
-                                        if currentEdge.destinationId == 132 {
-                                            
-                                            addEndingReached(currentNode: activeNode)
-                                            
-                                        }
-                                        // Advance to whatever node this prompt is for
-                                        activeNode = currentEdge.destinationId
-                                    }
                             }
+                            
+                            // Show the image, if there is one
+                            
+                            if let image = node.image {
+                                
+                                Image(image)
+                                    .resizable()
+                                    .scaledToFit()
+
+                            }
+                            
+                            // Show choices, when they exist
+                            ForEach(node.edges, id: \.self) { currentEdge in
+                                HStack {
+                                    Spacer()
+                                    
+                                    Text(currentEdge.prompt)
+                                        .italic()
+                                        .padding()
+                                        .font(.custom("Georgia", size: 20, relativeTo: .headline))
+                                        .multilineTextAlignment(.trailing)
+                                        .onTapGesture {
+                                            if currentEdge.destinationId == 132 {
+                                                
+                                                addEndingReached(currentNode: activeNode)
+                                                
+                                            }
+                                            // Advance to whatever node this prompt is for
+                                            activeNode = currentEdge.destinationId
+                                            
+                                            // Sets the scroll view to return to the top after moving to a new page
+                                            reader?.scrollTo("top-of-page")
+
+                                        }
+                                    
+                                }
+                            }
+                            
                         }
-                        
+                       
                     }
-                   
+                    .onAppear {
+                        self.reader = scrollViewProxy
+                    }
+
                 }
-                
+                                
             }
             .background(
                 Image("Background")
