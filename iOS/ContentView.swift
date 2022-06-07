@@ -35,13 +35,18 @@ struct ContentView: View {
     var body: some View {
         
         if gameIsOn == false {
-            
+            VStack {
             // Welcome screen
             Text("Start Game")
+    
                 .onTapGesture {
                     startGame()
                 }
-            
+            Image("homescreen")
+                    .resizable()
+                .scaledToFit()
+                
+            }
         } else {
             
             // Game is being played
