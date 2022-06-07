@@ -14,6 +14,7 @@ struct NodeView: View {
     let node: Node
     @Binding var activeNode: Int
     @State private var reader: ScrollViewProxy?
+    @State private var showingStats = false
     
     var body: some View {
         
@@ -52,6 +53,31 @@ struct NodeView: View {
                         
                     }
                     
+                    if node.ending != nil {
+                        
+                        Button("View Stats") {
+                            
+                            addEndingReached(currentNode: activeNode)
+                            
+                            showingStats.toggle()
+                            
+                        }
+                        .sheet(isPresented: $showingStats) {
+                            
+                            AchievementsView()
+                            
+                        }
+                        
+                        Button("Restart") {
+                            
+                            addEndingReached(currentNode: activeNode)
+
+                            activeNode = 1
+                            
+                        }
+                        
+                    }
+                    
                     // Show choices, when they exist
                     ForEach(node.edges, id: \.self) { currentEdge in
                         HStack {
@@ -63,10 +89,7 @@ struct NodeView: View {
                                 .font(.custom("Georgia", size: 20, relativeTo: .headline))
                                 .multilineTextAlignment(.trailing)
                                 .onTapGesture {
-                                    if node.ending != nil {
-                                        
-                                        addEndingReached(currentNode: activeNode)
-                                    }
+
                                     // Advance to whatever node this prompt is for
                                     activeNode = currentEdge.destinationId
                                     
@@ -79,7 +102,6 @@ struct NodeView: View {
                     }
                     
                 }
-                
                 .onAppear {
                     self.reader = scrollViewProxy
                 }
