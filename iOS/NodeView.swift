@@ -26,10 +26,11 @@ struct NodeView: View {
                         .id("top-of-page")
                         .tag("top-of-page")
                     
+
                     VStack(alignment: .leading) {
                         
                         // Ending page
-                        if node.id == 132 {
+                        if node.ending != nil {
                             
                             // Returns to the first page of the book
                             Button("restart") {
