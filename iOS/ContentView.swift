@@ -14,6 +14,8 @@ struct ContentView: View {
     // What page are we on?
     @State var activeNode = 0
     
+    @State private var animationAmount = 1.0
+    
     // MARK: Computed properties (tell us things or show us things)
     
     // Whether the game is being played or not
@@ -45,12 +47,14 @@ struct ContentView: View {
                         .resizable()
                     .scaledToFit()
                 
-                Text("Start Game")
-                    .font(.custom("AmericanTypewriter", size: 30, relativeTo: .title))
-                    .onTapGesture {
-                        startGame()
-                        
+                
+                Button ("Start game") {
+                    animationAmount += 1
+                    startGame()
                 }
+                .font(.custom("AmericanTypewriter", size: 30, relativeTo: .title))
+                
+
                 
             }
             .background(
