@@ -36,18 +36,26 @@ struct ContentView: View {
         
         if gameIsOn == false {
             VStack {
-            // Welcome screen
-            Text("Start Game")
-                .font(.custom("Press Start 2P", size: 30, relativeTo: .title))
-                .onTapGesture {
-                    startGame()
+                
+            Text("Mystery of The Maya")
+                    .font(.custom("AmericanTypewriter", size: 60))
+                    .multilineTextAlignment(.center)
 
+                Image("homescreen")
+                        .resizable()
+                    .scaledToFit()
+                
+                Text("Start Game")
+                    .font(.custom("AmericanTypewriter", size: 30, relativeTo: .title))
+                    .onTapGesture {
+                        startGame()
+                        
                 }
-            Image("homescreen")
-                    .resizable()
-                .scaledToFit()
                 
             }
+            .background(
+                Image("Background")
+                    .ignoresSafeArea(.all))
         } else {
             
             // Game is being played
