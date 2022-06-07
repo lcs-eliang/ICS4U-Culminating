@@ -62,6 +62,8 @@ struct NodeView: View {
                             showingStats.toggle()
                             
                         }
+                        .padding()
+                        .font(.custom("Georgia", size: 20, relativeTo: .headline))
                         .sheet(isPresented: $showingStats) {
                             
                             AchievementsView()
@@ -75,6 +77,8 @@ struct NodeView: View {
                             activeNode = 1
                             
                         }
+                        .padding()
+                        .font(.custom("Georgia", size: 20, relativeTo: .headline))
                         
                     }
                     
