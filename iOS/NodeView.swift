@@ -79,7 +79,7 @@ struct NodeView: View {
                                         .font(.custom("Georgia", size: 20, relativeTo: .headline))
                                         .multilineTextAlignment(.trailing)
                                         .onTapGesture {
-                                            if currentEdge.destinationId == 132 {
+                                            if node.ending != nil {
                                                 
                                                 addEndingReached(currentNode: activeNode)
                                                 
