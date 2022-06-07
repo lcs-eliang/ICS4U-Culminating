@@ -20,7 +20,7 @@ struct NodeView: View {
             ScrollView {
                 
                 ScrollViewReader {
-                    ScrollViewProxy in
+                    scrollViewProxy in
                     
                     Text("")
                         .id("top-of-page")
@@ -96,6 +96,9 @@ struct NodeView: View {
                             
                         }
                        
+                    }
+                    .onAppear {
+                        self.reader = scrollViewProxy
                     }
 
                 }
