@@ -52,6 +52,26 @@ struct NodeView: View {
                         
                     }
                     
+                    if node.ending != nil {
+                        
+                        Button("View Stats") {
+                            
+                            addEndingReached(currentNode: activeNode)
+                            
+                            AchievementsView()
+                            
+                        }
+                        
+                        Button("Restart") {
+                            
+                            addEndingReached(currentNode: activeNode)
+
+                            activeNode = 1
+                            
+                        }
+                        
+                    }
+                    
                     // Show choices, when they exist
                     ForEach(node.edges, id: \.self) { currentEdge in
                         HStack {
@@ -63,10 +83,7 @@ struct NodeView: View {
                                 .font(.custom("Georgia", size: 20, relativeTo: .headline))
                                 .multilineTextAlignment(.trailing)
                                 .onTapGesture {
-                                    if node.ending != nil {
-                                        
-                                        addEndingReached(currentNode: activeNode)
-                                    }
+
                                     // Advance to whatever node this prompt is for
                                     activeNode = currentEdge.destinationId
                                     
@@ -79,7 +96,6 @@ struct NodeView: View {
                     }
                     
                 }
-                
                 .onAppear {
                     self.reader = scrollViewProxy
                 }
