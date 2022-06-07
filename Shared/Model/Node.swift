@@ -145,9 +145,7 @@ let nodes = [
          paragraphs: ["The snakebite hurts. The Plumed Serpent becomes a simple dangerous snake again. It slides over the tree trunk, tucks its head in a hole and vanishes.", "It's all over. The Toltecs leave you on the spot to die. You are useless to them now.", "But you don't die! The Plumed Serpent was protecting you all along. The spirit of the Plumed Serpent makes you well again. And you live on as one of the attendants of the most powerful of the Mayan gods. Perhaps you will find Tom, perhaps not."
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "Turn to the next page")
-         ], ending: Ending(classification: .good, description: "Live as an attendant to the Mayan gods")),
+         edges: [], ending: Ending(classification: .good, description: "Live as an attendant to the Mayan gods")),
 14 : Node (id: 14,
          paragraphs: ["You stare at the priests in front of you. Two of them glare at you. One of them fingers his knife, and suddenly you are frightened.", "The head priest looks stern and says, \"Be calm, we will not hurt you. Look in the heavens. There is Venus."
          ],
@@ -222,17 +220,13 @@ let nodes = [
          paragraphs: ["You are the mighty ruler, inheritor of the Plumed Serpent. Beware any and all who defy you. You enter Chichen Itza triumphantly. Wherever you go, people worship and love you.", "Great feasts are held in the courtyard and thousands of people join in. When the ball game is played, however, you refuse to let the losers be sacrificed. You stop all sacrifices of people and animals, replacing them with offerings of maize and squash and chili peppers. The people love you and respect you, but the priests grow sullen and angry. They dislike you because you have taken away their power. Beware. The revenge of Mayan priests and shamans could be swift and terrible.", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .bad, description: "Become ruler of the Mayans but be killed by priests")),
+         edges: [], ending: Ending(classification: .bad, description: "Become ruler of the Mayans but be killed by priests")),
     
 22 : Node (id: 22,
          paragraphs: ["As he walks away, Manuel turns to you and motions with a small rod. A beam of light shoots goose out of it. Suddenly you are so frightened that the hair on the back of your neck stands up and bumps appear on your arms. The beam of light is like an eraser and it wipes your mind clear of all memory of the day. Your last image is of a smiling Tom aboard the star cruiser.", "Suddenly the spacecraft is gone and you are standing at the foot of El Castillo. You can't remember anything that happened after your breakfast with Manuel. It is quiet in the great courtyard. Your big chance has come and You blew it. gone.", "The End"
          ],
          image: "pg-22",
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .bad, description: "Miss your chance to go into space with aliens")),
+         edges: [], ending: Ending(classification: .bad, description: "Miss your chance to go into space with aliens")),
     
 23 : Node (id: 23,
          paragraphs: ["Kabah is rich in history and tradition. The rain god Chac adorns the walls of the temples. The Plumed Serpent is carved on most of the buildings. A girl of eleven named Mimla and a boy of fifteen named Ordex become your friends and companions. Daily, you work the fields planted with maize, squash, and peppers.", "In the heat of the day, you gather under the shelter of thatched roofs and play Mayan games of chance and skill called Mara Coo. The old people tell stories and recite poems about glorious leaders, bloody wars, and fierce or loving gods. You are careful to watch for the dreaded, but honored rattlesnakes, for they lurk in the dry bush ready to kill.", "You grow restless and feel guilty that you are not searching for Tom.", "\"I must leave,\" you announce to your new friends and Dr. Lopez.", "\"If you stay, you could have a brilliant future as a member of our group. Soon we will overthrow the priests. You are a natural leader.\"", "\"But my friend Tom, I must find him,\" you state as firmly as possible.", "\"As you wish,\" is the simple answer."
@@ -283,11 +277,7 @@ let nodes = [
          paragraphs: ["Manuel answers, \"Oh, the rains returned. But it was too late. By that time the people had moved on. They stopped believing in the power of the priests. They left in search of better land and more water. The people believed that Chac had cursed the area.\"", "\"I understand this,\" you say, \"but what happened to Tom? Did you show him this too?\" \"I cannot tell you. You must search on your own.\"", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132,
-                 prompt: ""),
-            
-            Edge(destinationId: 38,
+         edges: [Edge(destinationId: 38,
                  prompt: "If you would like to start your investigation over again, turn to page 38.")
          ], ending: Ending(classification: .bad, description: "Return home safely but many Mayans die")),
 
@@ -363,9 +353,7 @@ let nodes = [
          paragraphs: ["You drew yellow. It is the straw of the ruler. You are immediately made the new ruler of the Toltecs. You rule until you die of old age at 93. Several times Manuel and Dr. Lopez try to get you to go back to the present, but you refuse. You enjoy being the ruler.", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .excellent, description: "Become ruler of the Mayans")),
+         edges: [], ending: Ending(classification: .excellent, description: "Become ruler of the Mayans")),
 
 40 : Node (id: 40,
          paragraphs: ["Manuel tells you these warriors have come from Chichen Itza. He introduces you to the officer in charge. On your way back to Chichen Itza, the officer speaks to you.", "\"There are two groups here. One group raids our enemies to get slaves or take revenge. The slaves are used for sacrifice. The soldiers in that unit are fast, quiet in the jungle, and ready to die if captured.\"", "\"The other group defends us against invaders. They are careful and watchful. They never give up. They will fight until the last one is dead.\""
@@ -380,9 +368,7 @@ let nodes = [
          paragraphs: ["\"No!\" you shout, \"I will never sacrifice a living being to any god for any reason. You are all It was a mistake to say that. The priests become crazy.\"", "It was a mistake to say that. The priests become very quiet and solemn. The sun is bright in the sky. Manuel is nowhere to be seen. The sound of a bird breaks the quiet as two of the priests move toward you. They are not smiling. One says, \"Since you will not perform the sacrifice, we will. You will be the victim.\"", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .catastrophic, description: "Be sacrificed by Mayan priests")),
+         edges: [], ending: Ending(classification: .catastrophic, description: "Be sacrificed by Mayan priests")),
     
 43 : Node (id: 43,
          paragraphs: ["\"Who are your enemies?\" you ask.", "\"Toltecs, a savage group who worship Smoking Mirror, their god of war and death. They are always invading us.\" Several warriors nod in agreement.", "The officer in command says, \"It's up to you. You can go on raids or stay here in defense.\""],
@@ -519,9 +505,7 @@ let nodes = [
          edges: [
             Edge(destinationId: 38,
                  prompt: "If you woud like to try investigating in Chichen Itza, turn to page 38."),
-            
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .good, description: "Return home safely")),
+            ], ending: Ending(classification: .good, description: "Return home safely")),
     
 58 : Node (id: 58,
          paragraphs: ["Tracking the jaguar isn't easy. The cat is sly and moves quietly through the bush. After stalking it, you understand why the Maya worship the jaguar. It is one of their important gods. You think it is because the cat seems to have supernatural powers. You try to guess what its next move will be. Whenever you think the cat is ahead of you, it suddenly appears behind you or off to the side. Maybe the jaguar is tracking you? You become so absorbed in the pursuit that you lose all track of"
@@ -557,17 +541,13 @@ let nodes = [
          paragraphs: ["You have heard people speak of the hill country to the south. They tell stories of a great rainforest, large temples, pyramids, and rich soil. They also speak of warfare. People from the west have been raiding the prosperous towns in the south in search of prisoners and treasure.", "You set out with a guide toward the fabled hills in the south. For days you travel under the blistering sun. Water is scarce, and your food runs out. After a while you begin to doubt that your guide knows where he is going. You wish you knew more about astronomy so that you could use the stars to guide the way. You grow weaker and weaker from lack of food and water. After almost eight days you can barely walk. You must have some water. But there is none.", "You are never seen or heard from again. Your last thoughts are that this is probably what happened to Tom.", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .catastrophic, description: "Die slowly from dehydration in the jungle")),
+         edges: [], ending: Ending(classification: .catastrophic, description: "Die slowly from dehydration in the jungle")),
     
 62 : Node (id: 62,
          paragraphs: ["One by one, the group standing at the pyramid enters the spacecraft by the transporter beam. You notice that halfway to the spacecraft, their bodies begin to glow. No one seems to be afraid.", "Gaining confidence, you step into the transporter beam and are carried up into the spacecraft. You hear nothing as you shoot up and away into the far reaches of the universe, to the planet Merganatic and the great Congress on Intergalactic Life. You wonder why the Mayan sites were chosen as contact points. Their brutal and complex society seems an odd choice for other planets. Who knows what lies ahead?", "The End"
          ],
            image: "pg-62",
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .excellent, description: "Go into space with aliens")),
+         edges: [], ending: Ending(classification: .excellent, description: "Go into space with aliens")),
     
 64 : Node (id: 64,
          paragraphs: ["You laugh out loud and point at the spacecraft and the people entering it.", "\"Great show, Manuel, great show! Tell me, how did you do it? What is it, the set for some movie?\"", "Manuel does not smile and does not speak. He shakes his head and moves off to join the group who are going up the transporter beam into the spacecraft."
@@ -602,9 +582,7 @@ let nodes = [
          paragraphs: ["You travel by foot through the jungle to Ixtal. Your attack is a complete success. The element of surprise works very well, and your band had the upper hand from the first. Even the chickens and dogs belonging to the villagers ran for cover. Dust rose as you raced around. A large group of people led by a woman escaped into the surrounding jungle, but you and your band let them go.", "You return triumphant, happy that no one was killed or hurt. Back in Chichen Itza, Manuel welcomes you and says, \"So, you like leading the life of a Maya. Well, I'm not surprised. Your friend Tom did not like it. He paid the supreme price.\"", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .bad, description: "Live happily with Mayans but Tom dies")),
+         edges: [], ending: Ending(classification: .bad, description: "Live happily with Mayans but Tom dies")),
     
 68 : Node (id: 68,
          paragraphs: ["You watch the fighting from behind a bush. Off to the right you see three of the enemy pulling on a large hemp rope. It releases a bent tree. The tree has a bucket filled with rocks that shower down on you.", "\"Watch out!\" you scream. \"Duck!\"", "Two of your warriors are knocked out. A flurry of arrows and spears fills the air. Three more of your warriors are wounded. Shouts and screams pierce the air.", "\"Escape!\" your captain yells.", "The attack is a complete failure. The enemy had more strength and courage than you ever imagined.", "When you try to retreat, you become confused. Where do you go? You are cut off from the other warriors."
@@ -634,9 +612,7 @@ let nodes = [
          paragraphs: ["You have always been an adventurer, so of course you follow the old man to the secret cenote. The trail is a faint path through the tangle of bushes, and within fifteen minutes you are completely lost. \"Hey, old man, where is this cenote of yours?\"", "He turns and smiles at you.", "\"Here it is.\"", "But instead of a cenote, you find yourself surrounded by three men. One of them holds a gun, and the other two have knives. They do not smile.", "\"Give us your money.\"", "You fumble for your wallet. There are two American ten-dollar bills and 300 Mexican pesos. You hand them over to the men. They tie you up with a rough hemp rope, load you onto a donkey, and move off into the jungle.", "\"We will hold you for ransom. Your people will pay and pay plenty. If they don't, you die. We have another hostage, you will keep him company.\"", "You hope that your family will be able to come up with the ransom money. You also hope that the other hostage is Tom.", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .catastrophic, description: "Mugged and held for ransom")),
+         edges: [], ending: Ending(classification: .catastrophic, description: "Mugged and held for ransom")),
     
 72 : Node (id: 72,
          paragraphs: ["Before you know it, you are on the field in the ball court. Shouting fills the air as the two teams practice. A large crowd gathers to watch.", "Six priests, three elders, and a group dressed in clothes of golden cloth march in, take their honored places, and signal for the game to begin.", "What if you lose? Your eyes quickly travel to the steps of the pyramid called El Castillo. You have heard of victims having their hearts ripped out and then being thrown down the steps into the courtyard.", "The game is long and hard. The score is close. Your heart pounds. With loud screams and yells, a raiding party bursts into the ball court. They are Toltecs, a tribe of fierce warriors from the north"
@@ -650,9 +626,7 @@ let nodes = [
          paragraphs: ["and west. You run off the ball court and hide in the bushes next to the big cenote. Others are not so lucky and die in agony.", "The Toltecs fan out and hunt for survivors. As you try to escape, you are spotted and chased. Your heart is pounding, you feel as though life is already over. Tom appears out of nowhere.", "\"Come with me. . . now!\" he shouts. You join him and run through a stone arch. Suddenly you are back in the present.", "\"Tell me, Tom, was this true what we did?\" you gasp. \"As true as true gets,\" he replies.", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .excellent, description: "Return home safely with Tom")),
+         edges: [], ending: Ending(classification: .excellent, description: "Return home safely with Tom")),
     
 75 : Node (id: 75,
          paragraphs: ["Who put the note in the darkened room? Who could have known you would be there and would find it? It might well be the secret forces of the Maya at work-forces too hidden for most humans to understand. You are fascinated.", "You check into the Hotel Maya. At nine o'clock when you walk down the corridor to Room 327, soldiers leap out of Rooms 328 and 329 and arrest you. They are all heavily armed. You can smell the oil on the weapons. Their captain speaks to you in Spanish, but then switches to English when you don't reply.", "\"So, you are the spy we have been waiting for. We knew we would catch you. If you are wondering what happened to your friend in Room 327, I'll tell you. He was captured two days ago, and is now in jail. You revolutionaries are all the same.\"", "The captain orders the soldiers to take you away under arrest."
@@ -682,9 +656,7 @@ let nodes = [
          paragraphs: ["Don't like taking chances, do you? Okay, go ahead. The next room is small and as dark as the others. You step cautiously into the room. Suddenly the floor beneath you gives way and you fall into a bright blue space, gathering speed at the rate of thirty-two feet per second. The rush of air against you flattens your nose against your face, slicks your hair back, and squishes your lips.", "The trap door opened onto a chute into the very heart of the Nunnery. Three levels below ground lies a secret ceremonial chamber where magic was conducted. Now you are but a participant in a great ancient Mayan ceremony.", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .catastrophic, description: "Trapped in Mayan Temple")),
+         edges: [], ending: Ending(classification: .catastrophic, description: "Trapped in Mayan Temple")),
     
 78 : Node (id: 78,
          paragraphs: ["You see two policemen near the tourist buses. \"We're sorry but we can't help you. We are too busy. We are trying to find one of your countrymen who vanished several weeks ago.\"", "You show them the note. When they see the sign of the red hand, they become very excited.", "\"Wait! Just one minute. Don't leave. Stay right there.\" They talk in hushed tones, and then they radio their headquarters.", "\"The captain is coming right away.\"", "Soon you hear the whirring of a helicopter. When it lands in the courtyard, three men get out.", "\"Let me see the note.\" It is the captain speaking. He is a heavy man with a black mustache.", "\"Aha! I see. The red hand. This is the mark of the revolutionaries. How did you come by this note? Do you know the American named Tom?\""
@@ -715,25 +687,19 @@ let nodes = [
          paragraphs: ["The red handprint is ominous. What can it mean? You enter the seventh room in the Nunnery building. Although it is dark inside, you see a face. It is luminous, and glows with a soft, yellowish light. A person clothed in silver with golden armbands stands in the middle of the room.", "\"You and three others have been chosen to journey to far space. Uxmal is our earth base. Join is if you have the courage. The earth as we know it will no longer be safe.\"", "You listen in amazement to all that he says. It sounds like the prediction made by Mayan priests hundreds and hundreds of years ago. It is scary, because maybe they were right.", "Tom suddenly appears, and it is clear he has already been to space and back. \"Come with us,\" he tells you. \"It is time. time.\"", "You decide to go with them.", "The End"
          ],
          image: "pg-81",
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .excellent, description: "Go into space with aliens")),
+         edges: [], ending: Ending(classification: .excellent, description: "Go into space with aliens")),
     
 83 : Node (id: 83,
          paragraphs: ["\"Captain, it's all a mistake. I was on my way to my own room. I just came to this room by accident. I am no revolutionary or spy. You must believe me.\"", "The captain laughs. \"They all say that. You are all the same. Spies, radicals, thieves. We have a way to deal with you!\"", "You are handcuffed, put into a jeep and driven to Merida. There, you are thrown into a small, damp, evil-smelling cell in the local jail. The captain comes to see you the next day to tell you that the judge has given you a thirty-year sentence for plotting to overthrow the government.", "\"But I've had no trial,\" you protest.", "\"We caught you red-handed, and we don't believe in trials anyway. These are dangerous times. You can call this the Revenge of the Maya. You have angered their ancient gods!\" he laughs.", "He stubs out a cigarette in the earthen floor, sticks his short, brown hands in his pockets, and walks away from your cell. You grab the bars of the cell and scream for help. Three guards at the end of the corridor just laugh. You will be in jail for a long time.", "The End"
          ],
          image: "pg-83",
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .catastrophic, description: "Arrested and thrown in jail")),
+         edges: [], ending: Ending(classification: .catastrophic, description: "Arrested and thrown in jail")),
     
 84 : Node (id: 84,
          paragraphs: ["\"But Captain, this is all a mistake. I am here to find a lost friend. I am no spy.\"", "The captain leads you into a room where three men are seated at a table. They look up when you enter. The thin one says, \"Wrong person! Who is this? That's not the one we want.\"", "The man says, \"Let the prisoner go. We are just wasting valuable time. The spy has had warning and time to escape.\"", "Is Tom the \"spy\" they are talking about? \"As for you, we have decided to deport you,\" the captain adds.", "\"Deport me? But what about my friend Tom?\" you cry.", "\"Tom will have to take care of himself,\" is the stern reply.", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .bad, description: "Deported back to your country")),
+         edges: [], ending: Ending(classification: .bad, description: "Deported back to your country")),
     
 85 : Node (id: 85,
          paragraphs: ["You arrange to get to Isla Mujeres by giving your watch to a ship captain. \"Come along then. We are leaving right away,\" the captain says after you hand over your watch.", "You cast off, and later that day, as the boat cuts through the water, you see black storm clouds gathering to the east.", "\"Captain, looks like a blow coming.\"", "\"The storms here are fierce.\" Suddenly the water is savage, a deadly dark green color.", "All crew members are called on deck. But the storm breaks fast. Vicious waves pound the hull, and gale-force winds rip at the sails. The waves try to wrench the tiller from your hands. The rough water stings your eyes and drenches your clothes.", "The captain asks you what you want to do."
@@ -787,9 +753,7 @@ let nodes = [
          paragraphs: ["Your cries for help have been heard by two of your fellow warriors. They are at your side now and help you to your feet. You are groggy, but with their help you stumble on through the jungle for more than three hours. The cries of your pursuers grow fainter.", "Finally, you are able to stop and rest, hidden by a small rock outcropping. One of the warriors cleans out the cut on your forehead and squeezes the juices from a plant into your wound.", "The three of you rest for the night, taking turns keeping a watchful eye on the surrounding jungle.", "When the orange sun finally appears in the sky, you all give thanks and continue back to Chichen Itza. \"My friends, without you, I would be lost. I owe my life to you.\"", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .bad, description: "Live with Mayans")),
+         edges: [], ending: Ending(classification: .bad, description: "Live with Mayans")),
     
 90 : Node (id: 90,
          paragraphs: ["You lie on the ground feeling dizzy and sick to your stomach. The Earth spins around and the colors you see are a blur. You grip a rock in your right hand, trying to hold on. Then you faint.", "When you awaken you are cold, hungry, stiff, and alone. The call of an owl echoes in the jungle. Sounds of twigs snapping and dry leaves rustling seem louder than they would if you weren't frightened.", "Two people appear, creeping from hiding places between first one, then another, tree. You hold your breath and don't move a muscle. They are coming toward you. You can almost feel one of their spears pushing into your back."
@@ -813,9 +777,7 @@ let nodes = [
          paragraphs: ["As they get closer, you realize that the only things they are carrying in their hands are cameras! They have been creeping around to take pictures of the rare birds in the area. Your time potion has worn off. You must have been out cold for a whole day.", "Soon you are being rushed to the hospital. As you lean back in the ambulance, you smile weakly at those two kind people who have rescued you. You don't bother starting in on the story of your time travel. You know they'll never believe you.", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .good, description: "Return home with mild injuries")),
+         edges: [], ending: Ending(classification: .good, description: "Return home with mild injuries")),
     
 95 : Node (id: 95,
          paragraphs: ["\"Tie the prisoner up. Quick!\"", "Rough hemp rope binds your arms and legs. You are suddenly pushed to the ground. The rope bites at your wrists.", "\"Where are you from? Tell us or you die.\"", "\"I'm from Chichen Itza.\" You try to hide your trembling.", "The leader smiles an evil smile.", "\"We are Toltecs. You Maya are fools. We will conquer you. Now lead us to your city.\"", "\"I'm lost.\"", "\"Liar! Lead us to Chichen Itza and maybe we'll send you back north to Teotihuacan with the other prisoners.\" He points at a sullen group of Maya who are tied up just as you are. You recognize Xha among them."
@@ -833,9 +795,7 @@ let nodes = [
          paragraphs: ["The lure of gold is great. From the beginning of time people have worshiped the shiny metal. They have fought wars, plundered cities, and committed murder in its name. Some say gold has a curse on it.", "You lose all track of time and place. You seat yourself in front of the treasure and feel the smooth metal. Time passes quickly, until a rumbling sound wakens you from your dreams of wealth. Rocks tumble from the roof of the cavern; boulders slide down and seal off the cave. The air grows hot. Soon the oxygen will be gone.", "You are finished. You are sealed in the cave by an earthquake. Is it the revenge of the ancient Maya?", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .catastrophic, description: "Sealed in a cave")),
+         edges: [], ending: Ending(classification: .catastrophic, description: "Sealed in a cave")),
     
 97 : Node (id: 97,
          paragraphs: ["Leaving Xha, you run as fast as you can out of the cave, and along the path back to Chichen Itza. There, you find Manuel.", "\"Manuel, Manuel, I want to go back to modern times. Please send me back.\"", "Manuel studies your face. He does not smile. \"If that is your wish, it will be done. But don't be hasty.\"", "\"I want to go. Now!\"", "Suddenly you are in the present time, driving along a modern road built over the old path. You want to see if you can find the cenote where the gold was hidden in the past. When you reach the site, you park the car. Trembling with excitement, you put on a wet suit and aqualung and dive below the surface of the cenote.", "To your horror, the entrance to the cave has been blocked. It looks like there is barely enough room for you to get in. But if you were to go for help, others will know about your discovery."
@@ -865,9 +825,7 @@ let nodes = [
          paragraphs: ["You start to run but soon you are surrounded by angry policemen. Manuel comes up to you and whispers in your ear. \"If you take this time potion now, you'll get out of this mess. Here.\"", "He hands you a small bottle and you drink it. The police are amazed because one moment you are there and the next you are gone.", "\"What happened? Wh-wh-where did the prisoner go?\" It's too late. You are back in the past. They will never find you.", "But how will you ever return to the present?", "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .bad, description: "Trapped in time")),
+         edges: [], ending: Ending(classification: .bad, description: "Trapped in time")),
     
 100 : Node (id: 100,
          paragraphs: ["Tulum is a spot of terrifying beauty on a cliff above the smashing surf. You reach this ceremonial center with mysterious ease, but once there, terror overwhelms you. Plague has broken out."
@@ -910,9 +868,7 @@ let nodes = [
             "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .bad, description: "Return home safely, but as the lone survivor of a shipwreck")),
+         edges: [], ending: Ending(classification: .bad, description: "Return home safely, but as the lone survivor of a shipwreck")),
     
 104 : Node (id: 104,
          paragraphs: [
@@ -938,9 +894,7 @@ let nodes = [
 
          ],
          image: "pg-105",
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .bad, description: "Trapped in time")),
+         edges: [], ending: Ending(classification: .bad, description: "Trapped in time")),
     
 106 : Node (id: 106,
          paragraphs: [
@@ -954,9 +908,7 @@ let nodes = [
 
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .bad, description: "Return home safely, but many people are killed")),
+         edges: [], ending: Ending(classification: .bad, description: "Return home safely, but many people are killed")),
     
 107 : Node (id: 107,
          paragraphs: [
@@ -968,9 +920,7 @@ let nodes = [
 
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .good, description: "Return home safely")),
+         edges: [], ending: Ending(classification: .good, description: "Return home safely")),
     
 108 : Node (id: 108,
          paragraphs: [
@@ -990,9 +940,7 @@ let nodes = [
 
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .excellent, description: "Return home safely with Tom")),
+         edges: [], ending: Ending(classification: .excellent, description: "Return home safely with Tom")),
     
 109 : Node (id: 109,
          paragraphs: [
@@ -1005,9 +953,7 @@ let nodes = [
             "The End"
          ],
          image: "pg-109",
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .excellent, description: "Return home safely")),
+         edges: [], ending: Ending(classification: .excellent, description: "Return home safely")),
     
 110 : Node (id: 110,
          paragraphs: [
@@ -1066,9 +1012,7 @@ let nodes = [
 
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .bad, description: "Return home safely but lose the lost Mayan treasure")),
+         edges: [], ending: Ending(classification: .bad, description: "Return home safely but lose the lost Mayan treasure")),
     
 113 : Node (id: 113,
          paragraphs: [
@@ -1084,9 +1028,7 @@ let nodes = [
 
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .excellent, description: "Find the lost jewels of the Maya")),
+         edges: [], ending: Ending(classification: .excellent, description: "Find the lost jewels of the Maya")),
     
 114 : Node (id: 114,
          paragraphs: [
@@ -1116,9 +1058,7 @@ let nodes = [
 
          ],
          image: "pg-115",
-         edges: [
-             Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .catastrophic, description: "Killed by hotel bellman")),
+         edges: [], ending: Ending(classification: .catastrophic, description: "Killed by hotel bellman")),
     
 116 : Node (id: 116,
          paragraphs: [
@@ -1170,7 +1110,7 @@ let nodes = [
 
          ],
          image: nil,
-            edges: [Edge(destinationId: 132, prompt: "")], ending: Ending(classification: .bad, description: "Return home safely but many people die")),
+            edges: [], ending: Ending(classification: .bad, description: "Return home safely but many people die")),
     
 119 : Node (id: 119,
          paragraphs: [
@@ -1200,9 +1140,7 @@ let nodes = [
 
          ],
          image: nil,
-        edges: [
-            Edge(destinationId: 132, prompt: "")
-        ], ending: Ending(classification: .good, description: "Become a revolutionary and help many people")),
+        edges: [], ending: Ending(classification: .good, description: "Become a revolutionary and help many people")),
     
 121 : Node (id: 121,
          paragraphs: [
@@ -1222,7 +1160,7 @@ let nodes = [
 
          ],
          image: nil,
-            edges: [Edge(destinationId: 132, prompt: "")], ending: Ending(classification: .bad, description: "Sent home by Tom")),
+            edges: [], ending: Ending(classification: .bad, description: "Sent home by Tom")),
     
 122 : Node (id: 122,
          paragraphs: [
@@ -1234,7 +1172,7 @@ let nodes = [
 
          ],
          image: nil,
-            edges: [Edge(destinationId: 132, prompt: "")], ending: Ending(classification: .catastrophic, description: "Sacrificed by priests")),
+            edges: [], ending: Ending(classification: .catastrophic, description: "Sacrificed by priests")),
     
 123 : Node (id: 123,
          paragraphs: [
@@ -1265,9 +1203,7 @@ let nodes = [
 
          ],
          image: "pg-124-125",
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .good, description: "Live with Mayans with Tom")),
+         edges: [], ending: Ending(classification: .good, description: "Live with Mayans with Tom")),
     
 126 : Node (id: 126,
          paragraphs: [
@@ -1276,9 +1212,7 @@ let nodes = [
          "The End"
          ],
          image: nil,
-         edges: [
-            Edge(destinationId: 132, prompt: "")
-         ], ending: Ending(classification: .catastrophic, description: "Killed by poisoned arrow")),
+         edges: [], ending: Ending(classification: .catastrophic, description: "Killed by poisoned arrow")),
     
 127 : Node (id: 127,
          paragraphs: [
@@ -1292,7 +1226,7 @@ let nodes = [
 
          ],
          image: nil,
-            edges: [Edge(destinationId: 132, prompt: "")], ending: Ending(classification: .bad, description: "Unwillingly sent back to the present")),
+            edges: [], ending: Ending(classification: .bad, description: "Unwillingly sent back to the present")),
     
 128 : Node (id: 128,
          paragraphs: [
@@ -1304,7 +1238,7 @@ let nodes = [
 
          ],
          image: nil,
-            edges: [Edge(destinationId: 132, prompt: "")], ending: Ending(classification: .bad, description: "Unwillingly sent back to the present")),
+            edges: [], ending: Ending(classification: .bad, description: "Unwillingly sent back to the present")),
     
 129 : Node (id: 129,
          paragraphs: [
@@ -1318,7 +1252,7 @@ let nodes = [
 
          ],
          image: nil,
-            edges: [Edge(destinationId: 132, prompt: "")], ending: Ending(classification: .bad, description: "Live with Mayans but Chichen Itza dies slowly")),
+            edges: [], ending: Ending(classification: .bad, description: "Live with Mayans but Chichen Itza dies slowly")),
     
 130 : Node (id: 130,
          paragraphs: [
@@ -1342,7 +1276,7 @@ let nodes = [
 
          ],
          image: nil,
-            edges: [Edge(destinationId: 132, prompt: "")], ending: Ending(classification: .bad, description: "Return home safely but many people die of disease")),
+            edges: [], ending: Ending(classification: .bad, description: "Return home safely but many people die of disease")),
     
 131 : Node (id: 131,
          paragraphs: [
@@ -1358,5 +1292,5 @@ let nodes = [
 
          ],
          image: nil,
-            edges: [Edge(destinationId: 132, prompt: "")], ending: Ending(classification: .catastrophic, description: "Trapped in past")),
+            edges: [], ending: Ending(classification: .catastrophic, description: "Trapped in past")),
 ]
