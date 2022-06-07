@@ -119,7 +119,7 @@ let nodes = [
 9 : Node (id: 9,
          paragraphs: ["Dr. Lopez reaches into his desk and pulls out a small flask. He holds it out toward you.", "\"Here. Take this. It is the last of my supply. This potion will let you travel back 800 years, to the time when Mayan civilization began to disappear. But remember. Don't show fear when you get there. You must be brave. Manuel will go with you.\"", "Dr. Lopez nods toward your guide. You look at Manuel, who looks back. His eyes are filled with kindness. \"I will go with you if you want me to,\" he says gently."
          ],
-         image: "pg 10",
+         image: "pg-10",
          edges: [
             Edge(destinationId: 11,
                  prompt: "If you decide to take the potion and travel back in time to look for Tom, turn to page 11."),
