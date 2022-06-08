@@ -76,6 +76,8 @@ struct NodeView: View {
 
                             activeNode = 1
                             
+                            reader?.scrollTo("top-of-page")
+                            
                         }
                         .padding()
                         .font(.custom("Georgia", size: 20, relativeTo: .headline))
