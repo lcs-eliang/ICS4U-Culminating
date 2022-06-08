@@ -14,6 +14,12 @@ struct ContentView: View {
     // What page are we on?
     @State var activeNode = 0
     
+    @State private var animationAmount = 1.0
+    
+    // controls the start of the animation of the button
+    let timer = Timer.publish(every: 2.25, on: .main, in: .common).autoconnect()
+
+    
     // MARK: Computed properties (tell us things or show us things)
     
     // Whether the game is being played or not
@@ -45,23 +51,45 @@ struct ContentView: View {
                         .resizable()
                     .scaledToFit()
                 
-                Text("Start Game")
-                    .font(.custom("AmericanTypewriter", size: 30, relativeTo: .title))
-                    .onTapGesture {
-                        startGame()
-                        
+                
+                Button ("Start game") {
+//                    animationAmount += 1
+                    startGame()
                 }
+                .font(.custom("AmericanTypewriter", size: 30, relativeTo: .title))
+                .scaleEffect(animationAmount)
+                .animation(
+                    .easeInOut(duration: 1)
+                        .repeatForever(autoreverses: true),
+                    value: animationAmount
+                )
+
                 
             }
             .background(
                 Image("Background")
                     .ignoresSafeArea(.all))
+            .onReceive(timer) { input in
+                
+                print ("timer is fired")
+                
+                animationAmount += 1
+
+                
+                // Stop the timer from continuing to fire
+                timer.upstream.connect().cancel()
+            }
+            
         } else {
             
             // Game is being played
             // Show the node
             NodeView(node: currentNode, activeNode: $activeNode)
-            
+                .onReceive(timer) { input in
+                    
+                    // Stop the timer from continuing to fire
+                    timer.upstream.connect().cancel()
+                }
         }
         
     }
