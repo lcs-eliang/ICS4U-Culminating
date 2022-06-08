@@ -16,7 +16,7 @@ struct NodeView: View {
     @State private var reader: ScrollViewProxy?
     @State private var showingStats = false
     
-    //What achievements have we earned?
+    // What special achievements have we earned?
     @State var islandExplorer = false
     @State var timeTraveler = false
     @State var ohNo = false
@@ -26,6 +26,7 @@ struct NodeView: View {
     var body: some View {
         
         ScrollView {
+            
             
             ScrollViewReader {
                 scrollViewProxy in
@@ -51,7 +52,6 @@ struct NodeView: View {
                     }
                     
                     // Show the image, if there is one
-                    
                     if let image = node.image {
                         
                         Image(image)
@@ -59,6 +59,8 @@ struct NodeView: View {
                             .scaledToFit()
                         
                     }
+                    
+                    // Checks if the user has attained a specific achievement
                     if activeNode == 32 {
                         islandExplorer = true
                     }
@@ -75,6 +77,7 @@ struct NodeView: View {
                         treasureHunter = true
                     }
                     
+                    // Shows relevant buttons when the user reaches an ending
                     if node.ending != nil {
                         
                         Button("View Stats") {
@@ -88,6 +91,7 @@ struct NodeView: View {
                         .font(.custom("Georgia", size: 20, relativeTo: .headline))
                         .sheet(isPresented: $showingStats) {
                             
+                            // Shows AchievementsView when 'showingStats' is toggled
                             AchievementsView(islandExplorer: islandExplorer, timeTraveler: timeTraveler, ohNo: ohNo, outOfThisWorld: outOfThisWorld, treasureHunter: treasureHunter)
                             
                         }
@@ -96,8 +100,10 @@ struct NodeView: View {
                             
                             addEndingReached(currentNode: activeNode)
 
+                            // Returns to the first page
                             activeNode = 1
                             
+                            // Sets the scroll view to return to the top after moving to a new page
                             reader?.scrollTo("top-of-page")
                             
                         }
