@@ -14,11 +14,11 @@ struct ContentView: View {
     // What page are we on?
     @State var activeNode = 0
     
-    @State private var animationAmount = 1.0
+    @State private var animationAmount = 0.75
     
     // controls the start of the animation of the button
-    let timer = Timer.publish(every: 2.25, on: .main, in: .common).autoconnect()
-
+    let timer = Timer.publish(every: 0.25, on: .main, in: .common).autoconnect()
+    
     
     // MARK: Computed properties (tell us things or show us things)
     
@@ -41,21 +41,28 @@ struct ContentView: View {
     var body: some View {
         
         if gameIsOn == false {
-            VStack {
+            VStack(spacing: 10) {
                 
-            Text("Mystery of The Maya")
-                    .font(.custom("AmericanTypewriter", size: 60))
+                Text("Mystery of The Maya")
+                    .font(.custom("AmericanTypewriter", size: 50))
                     .multilineTextAlignment(.center)
-
+                    .padding()
+                    .foregroundColor(.white)
+                
                 Image("homescreen")
-                        .resizable()
+                    .resizable()
                     .scaledToFit()
+                    .padding(.horizontal, 5)
+                    .padding(.vertical, 20)
                 
                 
-                Button ("Start game") {
-//                    animationAmount += 1
+                Spacer()
+                
+                Button ("Start game ?") {
                     startGame()
                 }
+                .shadow(color: .white, radius: 10)
+                .foregroundColor(.white)
                 .font(.custom("AmericanTypewriter", size: 30, relativeTo: .title))
                 .scaleEffect(animationAmount)
                 .animation(
@@ -63,18 +70,23 @@ struct ContentView: View {
                         .repeatForever(autoreverses: true),
                     value: animationAmount
                 )
-
+                
+                Spacer()
                 
             }
             .background(
-                Image("Background")
-                    .ignoresSafeArea(.all))
+                Image("cover")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea(.all)
+            )
+            
             .onReceive(timer) { input in
                 
                 print ("timer is fired")
                 
-                animationAmount += 1
-
+                animationAmount += 0.5
+                
                 
                 // Stop the timer from continuing to fire
                 timer.upstream.connect().cancel()
