@@ -20,6 +20,7 @@ struct AchievementsView: View {
             Text("Achievements")
                 .padding()
                 .font(.custom("Georgia", size: 40, relativeTo: .title))
+            // An official count of all endings reached, in terms of types
             HStack {
                 Text ("Total Endings Discovered")
                     .font(.custom("Georgia", size: 20, relativeTo: .title))
@@ -82,6 +83,8 @@ struct AchievementsView: View {
                     .padding()
                     .foregroundColor(.red)
             }
+            
+            // List of special achievements
             if islandExplorer {
                 HStack {
                     Image(systemName: "globe.americas")

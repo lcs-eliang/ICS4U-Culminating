@@ -51,7 +51,6 @@ struct ContentView: View {
                         .resizable()
                     .scaledToFit()
                 
-                
                 Button ("Start game") {
 //                    animationAmount += 1
                     startGame()
