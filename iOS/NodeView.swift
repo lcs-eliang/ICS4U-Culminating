@@ -16,6 +16,13 @@ struct NodeView: View {
     @State private var reader: ScrollViewProxy?
     @State private var showingStats = false
     
+    //What achievements have we earned?
+    @State var islandExplorer = false
+    @State var timeTraveler = false
+    @State var ohNo = false
+    @State var outOfThisWorld = false
+    @State var treasureHunter = false
+    
     var body: some View {
         
         ScrollView {
@@ -52,6 +59,21 @@ struct NodeView: View {
                             .scaledToFit()
                         
                     }
+                    if activeNode == 32 {
+                        islandExplorer = true
+                    }
+                    if activeNode == 11 || activeNode == 99 {
+                        timeTraveler = true
+                    }
+                    if activeNode == 42 || activeNode == 122 {
+                        ohNo = true
+                    }
+                    if activeNode == 62 || activeNode == 81 {
+                        outOfThisWorld = true
+                    }
+                    if activeNode == 60 {
+                        treasureHunter = true
+                    }
                     
                     if node.ending != nil {
                         
@@ -66,7 +88,7 @@ struct NodeView: View {
                         .font(.custom("Georgia", size: 20, relativeTo: .headline))
                         .sheet(isPresented: $showingStats) {
                             
-                            AchievementsView()
+                            AchievementsView(islandExplorer: islandExplorer, timeTraveler: timeTraveler, ohNo: ohNo, outOfThisWorld: outOfThisWorld, treasureHunter: treasureHunter)
                             
                         }
                         
