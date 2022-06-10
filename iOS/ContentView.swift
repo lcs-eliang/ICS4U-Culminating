@@ -56,9 +56,11 @@ struct ContentView: View {
                     .padding(.vertical, 20)
                 
                 
+
                 Spacer()
                 
                 Button ("Start game ?") {
+
                     startGame()
                 }
                 .shadow(color: .white, radius: 10)

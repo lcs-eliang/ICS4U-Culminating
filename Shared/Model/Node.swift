@@ -386,7 +386,7 @@ let nodes = [
 44 : Node (id: 44,
          paragraphs: ["You've got a hunch that Tom might have gone to Uxmal. You go with Manuel to the bus station for the trip there. The trip is long and hot, but finally you arrive at the ruins of the city. The Temple of the Magicians looms over the land. Steep stone steps ascend to a smaller temple building on top of the pyramid. Across from the Temple of the Magicians is a large, rectangular building which the Spanish Conquistadors called the Nunnery. No one really knows what it was used for."
          ],
-         image: "pg 44-45",
+         image: "pg-44-45",
          edges: [
             Edge(destinationId: 45, prompt: "Turn to the next page")
          ], ending: nil),
