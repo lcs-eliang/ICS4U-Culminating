@@ -16,12 +16,43 @@ struct NodeView: View {
     @State private var reader: ScrollViewProxy?
     @State private var showingStats = false
     
+    // MARK: Computed properties
     // What special achievements have we earned?
-    @State var islandExplorer = false
-    @State var timeTraveler = false
-    @State var ohNo = false
-    @State var outOfThisWorld = false
-    @State var treasureHunter = false
+    var islandExplorer: Bool {
+        if activeNode == 32 {
+            return true
+        } else {
+            return false
+        }
+    }
+    var timeTraveler: Bool {
+        if activeNode == 11 || activeNode == 99 {
+            return true
+        } else {
+            return false
+        }
+    }
+    var ohNo: Bool {
+        if activeNode == 42 || activeNode == 122 {
+            return true
+        } else {
+            return false
+        }
+    }
+    var outOfThisWorld: Bool {
+        if activeNode == 62 || activeNode == 81 {
+            return true
+        } else {
+            return false
+        }
+    }
+    var treasureHunter: Bool {
+        if activeNode == 60 {
+            return true
+        } else {
+            return false
+        }
+    }
     
     var body: some View {
         
@@ -59,24 +90,7 @@ struct NodeView: View {
                             .scaledToFit()
                         
                     }
-                    
-                    // Checks if the user has attained a specific achievement
-                    if activeNode == 32 {
-                        islandExplorer = true
-                    }
-                    if activeNode == 11 || activeNode == 99 {
-                        timeTraveler = true
-                    }
-                    if activeNode == 42 || activeNode == 122 {
-                        ohNo = true
-                    }
-                    if activeNode == 62 || activeNode == 81 {
-                        outOfThisWorld = true
-                    }
-                    if activeNode == 60 {
-                        treasureHunter = true
-                    }
-                    
+                                        
                     // Shows relevant buttons when the user reaches an ending
                     if node.ending != nil {
                         
