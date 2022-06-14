@@ -37,6 +37,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		258A561028590DFD008A7356 /* GraphGenerator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GraphGenerator.playground; sourceTree = "<group>"; };
+		258A561128590E12008A7356 /* output.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = output.pdf; sourceTree = "<group>"; };
 		259D9076284A3C79001BD09C /* Classify Ending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Classify Ending.swift"; sourceTree = "<group>"; };
 		259D9079284A940D001BD09C /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		7FB0FCCB285654DD0093B401 /* EndingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,8 @@
 		99945A5A283E6B9200C1B621 = {
 			isa = PBXGroup;
 			children = (
+				258A561128590E12008A7356 /* output.pdf */,
+				258A561028590DFD008A7356 /* GraphGenerator.playground */,
 				C829BC992847B0720063355F /* Shared */,
 				99945A65283E6B9200C1B621 /* ICS4U-Culminating */,
 				C829BC892847AB040063355F /* iOS */,
